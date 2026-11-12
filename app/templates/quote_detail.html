@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-2xl font-bold">Comparativo {{ report.input.origin }} - {{ report.input.destination }}</h1>
+<p class="break-all">ID {{ quote.id }} | Lote {{ quote.batch_id }} | {{ report.version }} | {{ quote.status }}</p>
+<div class="alert alert-warning" role="note">{{ report.notice }} Modo: <strong>{{ quote.mode }}</strong>.</div>
+{% if report.options %}
+{% set best = report.options[0] %}
+<div class="stats stats-vertical md:stats-horizontal shadow bg-base-100">
+  <div class="stat"><div class="stat-title">Menor costo calculable</div><div class="stat-value text-lg">{{ best.agent }}</div><div class="stat-desc">{{ best.carrier }}</div></div>
+  <div class="stat"><div class="stat-title">Total nominal USD</div><div class="stat-value text-2xl">{{ best.total|money }}</div></div>
+  <div class="stat"><div class="stat-title">Costo por contenedor</div><div class="stat-value text-2xl">{{ best.average|money }}</div></div>
+  <div class="stat"><div class="stat-title">Impacto / FOB</div><div class="stat-value text-2xl">{{ "%.2f"|format(best.impact|float * 100) }}%</div></div>
+</div>
+<p>{{ report.agent_count }} agente(s); se muestran hasta cinco. Fecha: {{ report.input.quote_date }}.</p>
+<div class="overflow-x-auto bg-base-100 rounded-box">
+<table class="table table-zebra">
+  <caption class="p-3 text-left">Una mejor oferta por agente; orden por costo total sin redondear</caption>
+  <thead><tr><th>Concepto</th>{% for o in report.options %}<th>{{ o.agent }}<br><span class="badge">#{{ loop.index }}</span></th>{% endfor %}</tr></thead>
+  <tbody>
+  <tr><th>Naviera</th>{% for o in report.options %}<td>{{ o.carrier }}</td>{% endfor %}</tr>
+  {% for index, name in [(0,'20 ST'),(1,'40 ST'),(2,'40 HC')] %}
+  <tr><th>Flete {{ name }}</th>{% for o in report.options %}<td>{{ o.freight_lines[index]|money }}</td>{% endfor %}</tr>
+  {% endfor %}
+  {% for key, name in [('documentation','Origen / BL'),('origin_cost','Gastos origen'),('freight','Flete maritimo total'),('filling_cost','Llenado / recargos (rotulo legado)'),('destination_cost','Destino'),('total','COSTO TOTAL'),('average','Costo / contenedor')] %}
+  <tr class="{{ 'font-bold bg-base-200' if key == 'total' else '' }}"><th>{{ name }}</th>{% for o in report.options %}<td>{{ o[key]|money }}</td>{% endfor %}</tr>
+  {% endfor %}
+  <tr><th>TT / dias libres</th>{% for o in report.options %}<td>{{ o.transit or 'No informado' }} / {{ o.free_days or 'No informado' }}</td>{% endfor %}</tr>
+  <tr><th>Vigencia hasta</th>{% for o in report.options %}<td>{{ o.valid_until or 'VALIDAR' }}</td>{% endfor %}</tr>
+  </tbody>
+</table>
+</div>
+{% for o in report.options %}
+<details class="collapse collapse-arrow bg-base-100 border border-base-300">
+  <summary class="collapse-title font-semibold">{{ o.agent }}: desglose y pendientes (oferta {{ o.rate_id }})</summary>
+  <div class="collapse-content space-y-3">
+    <ul class="list-disc pl-6">{% for warning in o.warnings %}<li>{{ warning }}</li>{% endfor %}</ul>
+    <table class="table"><thead><tr><th>Concepto</th><th>Base</th><th>Unitario</th><th>Factor</th><th>Total</th></tr></thead>
+    <tbody>{% for c in o.charges %}<tr><td>{{ c.concept }}</td><td>{{ c.basis }}</td><td>{{ c.unit|money }}</td><td>{{ c.multiplier }}</td><td>{{ c.subtotal|money }}</td></tr>{% endfor %}</tbody></table>
+    {% if quote.status == 'draft' and quote.mode == 'strict' %}
+    <form method="post" action="{{ url_for('web.adjust_quote', quote_id=quote.id) }}" class="flex flex-wrap gap-3 items-end">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="rate_id" value="{{ o.rate_id }}">
+      <label>Gastos origen (total USD)<input class="input w-full" type="number" min="0" step="0.0001" name="origin_cost" value="{{ o.origin_cost }}" required></label>
+      <label>Llenado / recargos (total USD)<input class="input w-full" type="number" min="0" step="0.0001" name="filling_cost" value="{{ o.filling_cost }}" required></label>
+      <label>Motivo<input class="input w-full" name="reason" minlength="5" maxlength="500" required></label>
+      <button class="btn btn-outline" type="submit">Aplicar y recalcular ranking</button>
+    </form>
+    {% endif %}
+  </div>
+</details>
+{% endfor %}
+{% if quote.status == 'draft' and quote.mode == 'strict' %}
+<form method="post" action="{{ url_for('web.save_quote', quote_id=quote.id) }}">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <button class="btn btn-primary">Guardar estimacion en historico</button>
+</form>
+{% endif %}
+{% else %}
+<div class="alert alert-info" role="status">SIN OPCION calculable. Revise la ruta, la fecha y las exclusiones.</div>
+{% endif %}
+<details class="collapse collapse-arrow bg-base-100">
+  <summary class="collapse-title">{{ report.excluded|length }} ofertas excluidas</summary>
+  <ul class="collapse-content list-disc pl-8">{% for e in report.excluded %}<li>Oferta {{ e.rate_id }} / registro {{ e.source_row }}: {{ e.reasons|join('; ') }}</li>{% endfor %}</ul>
+</details>
+<a class="btn btn-outline" href="{{ url_for('web.home') }}">Nueva cotizacion</a>
+{% endblock %}

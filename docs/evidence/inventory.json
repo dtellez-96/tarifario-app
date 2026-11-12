@@ -1,0 +1,3267 @@
+{
+  "sha256": "b4a6051c0d6b876af11e247dbf4f97a20749cbe99d37bf4a7adafcf3c0380db9",
+  "modules": [
+    {
+      "name": "Hoja1.cls",
+      "stream": "VBA/Hoja1",
+      "lines": 8
+    },
+    {
+      "name": "Module1.bas",
+      "stream": "VBA/Module1",
+      "lines": 1177
+    },
+    {
+      "name": "ThisWorkbook.cls",
+      "stream": "VBA/ThisWorkbook",
+      "lines": 8
+    },
+    {
+      "name": "Hoja2.cls",
+      "stream": "VBA/Hoja2",
+      "lines": 8
+    },
+    {
+      "name": "Hoja3.cls",
+      "stream": "VBA/Hoja3",
+      "lines": 8
+    },
+    {
+      "name": "Hoja4.cls",
+      "stream": "VBA/Hoja4",
+      "lines": 8
+    },
+    {
+      "name": "Hoja5.cls",
+      "stream": "VBA/Hoja5",
+      "lines": 8
+    },
+    {
+      "name": "Hoja6.cls",
+      "stream": "VBA/Hoja6",
+      "lines": 8
+    },
+    {
+      "name": "Hoja7.cls",
+      "stream": "VBA/Hoja7",
+      "lines": 8
+    },
+    {
+      "name": "Hoja8.cls",
+      "stream": "VBA/Hoja8",
+      "lines": 8
+    },
+    {
+      "name": "Hoja9.cls",
+      "stream": "VBA/Hoja9",
+      "lines": 8
+    },
+    {
+      "name": "Hoja10.cls",
+      "stream": "VBA/Hoja10",
+      "lines": 8
+    }
+  ],
+  "defined_names": {
+    "_xleta.COT": "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='_xleta.COT', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=True, function=None, vbProcedure=None, xlm=True, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='#NAME?'",
+    "ListaDestinos": "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='ListaDestinos', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='Catalogos!$B$2:$B$12'",
+    "ListaOrigenes": "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='ListaOrigenes', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='Catalogos!$A$2:$A$11'"
+  },
+  "sheets": [
+    {
+      "name": "Cotizador",
+      "state": "visible",
+      "rows": 50,
+      "columns": 11,
+      "nonempty": 51,
+      "formula_count": 5,
+      "errors": [],
+      "merges": [
+        "E9:F9",
+        "E12:F12",
+        "A34:B36",
+        "A1:J2",
+        "E34:F36",
+        "C34:D36",
+        "D5:F5",
+        "E7:F7",
+        "E10:F10",
+        "A14:F14",
+        "E11:F11",
+        "A3:J3",
+        "G34:J36",
+        "A38:J38",
+        "D6:F6",
+        "E8:F8"
+      ],
+      "validations": [
+        "<openpyxl.worksheet.datavalidation.DataValidation object>\nParameters:\nsqref=<MultiCellRange [B6]>, showDropDown=False, showInputMessage=False, showErrorMessage=False, allowBlank=False, errorTitle=None, error=None, promptTitle=None, prompt=None, type='list', errorStyle=None, imeMode=None, operator=None, formula1='ListaOrigenes', formula2=None",
+        "<openpyxl.worksheet.datavalidation.DataValidation object>\nParameters:\nsqref=<MultiCellRange [B7]>, showDropDown=False, showInputMessage=False, showErrorMessage=False, allowBlank=False, errorTitle=None, error=None, promptTitle=None, prompt=None, type='list', errorStyle=None, imeMode=None, operator=None, formula1='ListaDestinos', formula2=None",
+        "<openpyxl.worksheet.datavalidation.DataValidation object>\nParameters:\nsqref=<MultiCellRange [B8:B11]>, showDropDown=False, showInputMessage=False, showErrorMessage=False, allowBlank=False, errorTitle=None, error=None, promptTitle=None, prompt=None, type='whole', errorStyle=None, imeMode=None, operator=None, formula1='0', formula2='50'"
+      ],
+      "tables": [],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [
+        "K"
+      ],
+      "hidden_rows": [],
+      "conditional_formats": [
+        "<ConditionalFormatting B15:F21 B22:G22 B23:F23 B25:B31 C24:F31>",
+        "<ConditionalFormatting B29:F29>",
+        "<ConditionalFormatting B24>"
+      ],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "COTIZADOR FCL | SIMPLE Y AUTOMÁTICO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A3",
+          "value": "Seleccione ruta y cantidades. El resultado compara costos completos, no solo el flete marítimo.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A5",
+          "value": "Fecha de cotización",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B5",
+          "value": "2026-11-09 00:00:00",
+          "type": "d",
+          "format": "dd\\-mmm\\-yyyy"
+        },
+        {
+          "cell": "A6",
+          "value": "Origen",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D6",
+          "value": "MEJOR OPCIÓN CALCULABLE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A7",
+          "value": "Destino",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D7",
+          "value": "Agente",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A8",
+          "value": "Cantidad 20 ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B8",
+          "value": 0,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "D8",
+          "value": "Naviera",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A9",
+          "value": "Cantidad 40 ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B9",
+          "value": 0,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "D9",
+          "value": "Costo total",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A10",
+          "value": "Cantidad 40 HC",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B10",
+          "value": 0,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "D10",
+          "value": "Costo / contenedor",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A11",
+          "value": "Número de BL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B11",
+          "value": 1,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "D11",
+          "value": "Impacto / FOB",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A12",
+          "value": "Valor FOB USD",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D12",
+          "value": "TT / libres",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A14",
+          "value": "COMPARATIVO POR AGENTE / FORWARDER",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A15",
+          "value": "AGENTE / FORWARDER",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B15",
+          "value": "SIN OPCIÓN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C15",
+          "value": "SIN OPCIÓN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D15",
+          "value": "SIN OPCIÓN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E15",
+          "value": "SIN OPCIÓN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F15",
+          "value": "SIN OPCIÓN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A16",
+          "value": "Naviera",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A17",
+          "value": "Flete 20' ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "K17",
+          "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),1)),\"\")",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "A18",
+          "value": "Flete 40' ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "K18",
+          "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),2)),\"\")",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "A19",
+          "value": "Flete 40' HC",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "K19",
+          "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),3)),\"\")",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "A20",
+          "value": "Origen / BL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "K20",
+          "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),4)),\"\")",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "A21",
+          "value": "Gastos en origen",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "K21",
+          "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),5)),\"\")",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "A22",
+          "value": "Flete marítimo total",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A23",
+          "value": "Llenado del contenedor",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A24",
+          "value": "Gastos en destino",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A25",
+          "value": "COSTO TOTAL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A26",
+          "value": "Costo medio / contenedor",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A27",
+          "value": "Tránsito estimado",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A28",
+          "value": "Días libres",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A29",
+          "value": "Estado de la tarifa",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A30",
+          "value": "Pendientes / validación",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A31",
+          "value": "RANKING POR PRECIO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A38",
+          "value": "La tabla compara una opción por agente. Gastos en destino se totalizan desde tblCargosDestino.",
+          "type": "s",
+          "format": "General"
+        }
+      ]
+    },
+    {
+      "name": "Comparativo",
+      "state": "hidden",
+      "rows": 411,
+      "columns": 17,
+      "nonempty": 6122,
+      "formula_count": 6105,
+      "errors": [],
+      "merges": [
+        "A1:O2"
+      ],
+      "validations": [],
+      "tables": [],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [],
+      "hidden_rows": [],
+      "conditional_formats": [],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "MOTOR DE COMPARACIÓN | NO MODIFICAR",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "N3",
+          "value": "CALLAO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A4",
+          "value": "ID",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B4",
+          "value": "Agente",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C4",
+          "value": "Naviera",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D4",
+          "value": "Origen",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E4",
+          "value": "Destino",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F4",
+          "value": 20,
+          "type": "n",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "G4",
+          "value": "40ST",
+          "type": "s",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "H4",
+          "value": "40HC",
+          "type": "s",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "I4",
+          "value": "FLETE",
+          "type": "s",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "J4",
+          "value": "Origen / BL",
+          "type": "s",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "K4",
+          "value": "Gastos en Origen",
+          "type": "s",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "L4",
+          "value": "Gastos en destino",
+          "type": "s",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "M4",
+          "value": "Collect",
+          "type": "s",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "N4",
+          "value": "TT",
+          "type": "s",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "O4",
+          "value": "Libres",
+          "type": "s",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "A5",
+          "value": "=Tarifas!A5",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "B5",
+          "value": "=Tarifas!B5",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "C5",
+          "value": "=Tarifas!G5",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "D5",
+          "value": "=Tarifas!D5",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "E5",
+          "value": "=Tarifas!E5",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "F5",
+          "value": "=Tarifas!H5",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "G5",
+          "value": "=Tarifas!I5",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "H5",
+          "value": "=Tarifas!J5",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "I5",
+          "value": "=IF(OR(D5<>Cotizador!$B$6,E5<>Cotizador!$B$7),0,F5*Cotizador!$B$8+G5*Cotizador!$B$9+H5*Cotizador!$B$10)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "J5",
+          "value": "=Tarifas!K5*Cotizador!$B$11",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "K5",
+          "value": "=Tarifas!L5*SUM(Cotizador!$B$8:$B$9)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "L5",
+          "value": "=(Tarifas!M5*SUM(Cotizador!$B$8:$B$9))+(Tarifas!N5*Cotizador!$B$11)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "M5",
+          "value": "=Tarifas!O5*(I5+J5+K5)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "N5",
+          "value": "=Tarifas!P5",
+          "type": "f",
+          "format": "0"
+        },
+        {
+          "cell": "O5",
+          "value": "=Tarifas!Q5",
+          "type": "f",
+          "format": "0"
+        },
+        {
+          "cell": "A6",
+          "value": "=Tarifas!A6",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "B6",
+          "value": "=Tarifas!B6",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "C6",
+          "value": "=Tarifas!G6",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "D6",
+          "value": "=Tarifas!D6",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "E6",
+          "value": "=Tarifas!E6",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "F6",
+          "value": "=Tarifas!H6",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "G6",
+          "value": "=Tarifas!I6",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "H6",
+          "value": "=Tarifas!J6",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "I6",
+          "value": "=IF(OR(D6<>Cotizador!$B$6,E6<>Cotizador!$B$7),0,F6*Cotizador!$B$8+G6*Cotizador!$B$9+H6*Cotizador!$B$10)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "J6",
+          "value": "=Tarifas!K6*Cotizador!$B$11",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "K6",
+          "value": "=Tarifas!L6*SUM(Cotizador!$B$8:$B$9)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "L6",
+          "value": "=(Tarifas!M6*SUM(Cotizador!$B$8:$B$9))+(Tarifas!N6*Cotizador!$B$11)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "M6",
+          "value": "=Tarifas!O6*(I6+J6+K6)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "N6",
+          "value": "=Tarifas!P6",
+          "type": "f",
+          "format": "0"
+        },
+        {
+          "cell": "O6",
+          "value": "=Tarifas!Q6",
+          "type": "f",
+          "format": "0"
+        },
+        {
+          "cell": "A7",
+          "value": "=Tarifas!A7",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "B7",
+          "value": "=Tarifas!B7",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "C7",
+          "value": "=Tarifas!G7",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "D7",
+          "value": "=Tarifas!D7",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "E7",
+          "value": "=Tarifas!E7",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "F7",
+          "value": "=Tarifas!H7",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "G7",
+          "value": "=Tarifas!I7",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "H7",
+          "value": "=Tarifas!J7",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "I7",
+          "value": "=IF(OR(D7<>Cotizador!$B$6,E7<>Cotizador!$B$7),0,F7*Cotizador!$B$8+G7*Cotizador!$B$9+H7*Cotizador!$B$10)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "J7",
+          "value": "=Tarifas!K7*Cotizador!$B$11",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "K7",
+          "value": "=Tarifas!L7*SUM(Cotizador!$B$8:$B$9)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "L7",
+          "value": "=(Tarifas!M7*SUM(Cotizador!$B$8:$B$9))+(Tarifas!N7*Cotizador!$B$11)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "M7",
+          "value": "=Tarifas!O7*(I7+J7+K7)",
+          "type": "f",
+          "format": "_-\"$\"\\ * #,##0.00_-;\\-\"$\"\\ * #,##0.00_-;_-\"$\"\\ * \"-\"??_-;_-@_-"
+        },
+        {
+          "cell": "N7",
+          "value": "=Tarifas!P7",
+          "type": "f",
+          "format": "0"
+        },
+        {
+          "cell": "O7",
+          "value": "=Tarifas!Q7",
+          "type": "f",
+          "format": "0"
+        },
+        {
+          "cell": "A8",
+          "value": "=Tarifas!A8",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "B8",
+          "value": "=Tarifas!B8",
+          "type": "f",
+          "format": "General"
+        },
+        {
+          "cell": "C8",
+          "value": "=Tarifas!G8",
+          "type": "f",
+          "format": "General"
+        }
+      ]
+    },
+    {
+      "name": "Catalogos",
+      "state": "hidden",
+      "rows": 12,
+      "columns": 2,
+      "nonempty": 23,
+      "formula_count": 0,
+      "errors": [],
+      "merges": [],
+      "validations": [],
+      "tables": [],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [],
+      "hidden_rows": [],
+      "conditional_formats": [],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "ORIGENES",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B1",
+          "value": "DESTINOS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A2",
+          "value": "GUANGZHOU",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B2",
+          "value": "BUENOS AIRES",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A3",
+          "value": "JIANGMEN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B3",
+          "value": "CALDERA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A4",
+          "value": "NANSHA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B4",
+          "value": "CALLAO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A5",
+          "value": "NINGBO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B5",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A6",
+          "value": "QINGDAO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B6",
+          "value": "CAUCEDO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A7",
+          "value": "SHANGHAI",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B7",
+          "value": "GUAYAQUIL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A8",
+          "value": "SHENZHEN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B8",
+          "value": "MOIN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A9",
+          "value": "TIANJIN (XINGANG)",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B9",
+          "value": "MONTEVIDEO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A10",
+          "value": "XIAMEN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B10",
+          "value": "POSORJA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A11",
+          "value": "ZHONGSHAN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B11",
+          "value": "PUERTO QUETZAL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B12",
+          "value": "RIO HAINA",
+          "type": "s",
+          "format": "General"
+        }
+      ]
+    },
+    {
+      "name": "Tarifas",
+      "state": "hidden",
+      "rows": 411,
+      "columns": 19,
+      "nonempty": 7375,
+      "formula_count": 0,
+      "errors": [],
+      "merges": [
+        "A1:R2"
+      ],
+      "validations": [],
+      "tables": [
+        "<openpyxl.worksheet.table.Table object>\nParameters:\nid=1, name='tblTarifas', displayName='tblTarifas', comment=None, ref='A4:S411', tableType=None, headerRowCount=1, insertRow=None, insertRowShift=None, totalsRowCount=None, totalsRowShown=None, published=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowBorderDxfId=None, tableBorderDxfId=None, totalsRowBorderDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, connectionId=None, autoFilter=<openpyxl.worksheet.filters.AutoFilter object>\nParameters:\nref='A4:S411', filterColumn=[], sortState=None, sortState=None, tableColumns=[<openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=1, uniqueName=None, name='ID', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=2, uniqueName=None, name='Agente', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=3, uniqueName=None, name='Pais_Hoja', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=4, uniqueName=None, name='Origen', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=5, uniqueName=None, name='Destino', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=6, uniqueName=None, name='Via', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=7, uniqueName=None, name='Naviera', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=8, uniqueName=None, name='Flete_20ST', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=9, uniqueName=None, name='Flete_40ST', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=10, uniqueName=None, name='Flete_40HC', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=11, uniqueName=None, name='BL_Origen', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=12, uniqueName=None, name='Gastos_Origen', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=13, uniqueName=None, name='Destino_x_Cont', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=14, uniqueName=None, name='Destino_x_BL', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=15, uniqueName=None, name='Collect_Pct', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=16, uniqueName=None, name='TT', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=17, uniqueName=None, name='Dias_Libres', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=18, uniqueName=None, name='Fuente', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=19, uniqueName=None, name='Notas_Cargos', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None], tableStyleInfo=<openpyxl.worksheet.table.TableStyleInfo object>\nParameters:\nname='TableStyleMedium2', showFirstColumn=False, showLastColumn=False, showRowStripes=True, showColumnStripes=False"
+      ],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [],
+      "hidden_rows": [],
+      "conditional_formats": [],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "BASE CONSOLIDADA DE TARIFAS FCL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A4",
+          "value": "ID",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B4",
+          "value": "Agente",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C4",
+          "value": "Pais_Hoja",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D4",
+          "value": "Origen",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E4",
+          "value": "Destino",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F4",
+          "value": "Via",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "G4",
+          "value": "Naviera",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H4",
+          "value": "Flete_20ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I4",
+          "value": "Flete_40ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "J4",
+          "value": "Flete_40HC",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "K4",
+          "value": "BL_Origen",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "L4",
+          "value": "Gastos_Origen",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "M4",
+          "value": "Destino_x_Cont",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "N4",
+          "value": "Destino_x_BL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "O4",
+          "value": "Collect_Pct",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "P4",
+          "value": "TT",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "Q4",
+          "value": "Dias_Libres",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "R4",
+          "value": "Fuente",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "S4",
+          "value": "Notas_Cargos",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A5",
+          "value": "TAR-0001",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B5",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C5",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D5",
+          "value": "NINGBO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E5",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "G5",
+          "value": "OOCL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H5",
+          "value": 9143,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "I5",
+          "value": 9196,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "J5",
+          "value": 9196,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "K5",
+          "value": 75,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "L5",
+          "value": 0,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "M5",
+          "value": 0,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "N5",
+          "value": 0,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "O5",
+          "value": 0,
+          "type": "n",
+          "format": "0.00%"
+        },
+        {
+          "cell": "Q5",
+          "value": 17,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "R5",
+          "value": "CONSOLCARGO_2026-11-06_TARIFARIO_FCL.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A6",
+          "value": "TAR-0002",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B6",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C6",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D6",
+          "value": "SHANGHAI",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E6",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "G6",
+          "value": "COSCO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H6",
+          "value": 9143,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "I6",
+          "value": 9196,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "J6",
+          "value": 9196,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "K6",
+          "value": 75,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "L6",
+          "value": 0,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "M6",
+          "value": 0,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "N6",
+          "value": 0,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "O6",
+          "value": 0,
+          "type": "n",
+          "format": "0.00%"
+        },
+        {
+          "cell": "Q6",
+          "value": 17,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "R6",
+          "value": "CONSOLCARGO_2026-11-06_TARIFARIO_FCL.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A7",
+          "value": "TAR-0003",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B7",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C7",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D7",
+          "value": "ZHONGSHAN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E7",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "G7",
+          "value": "COSCO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H7",
+          "value": 9248,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "I7",
+          "value": 9300,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "J7",
+          "value": 9300,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "K7",
+          "value": 75,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "L7",
+          "value": 0,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "M7",
+          "value": 0,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        },
+        {
+          "cell": "N7",
+          "value": 0,
+          "type": "n",
+          "format": "\\$#,##0.00"
+        }
+      ]
+    },
+    {
+      "name": "TARIFARIOS_AGENTES",
+      "state": "visible",
+      "rows": 487,
+      "columns": 16,
+      "nonempty": 5527,
+      "formula_count": 0,
+      "errors": [],
+      "merges": [],
+      "validations": [],
+      "tables": [
+        "<openpyxl.worksheet.table.Table object>\nParameters:\nid=4, name='TARIFARIOS_AGENTES', displayName='TARIFARIOS_AGENTES', comment=None, ref='A1:P487', tableType='queryTable', headerRowCount=1, insertRow=None, insertRowShift=None, totalsRowCount=None, totalsRowShown=False, published=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowBorderDxfId=None, tableBorderDxfId=None, totalsRowBorderDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, connectionId=None, autoFilter=<openpyxl.worksheet.filters.AutoFilter object>\nParameters:\nref='A1:P487', filterColumn=[], sortState=None, sortState=None, tableColumns=[<openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=1, uniqueName='1', name='Source.Name', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=1, headerRowDxfId=None, dataDxfId=23, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=2, uniqueName='2', name='AGENTE', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=2, headerRowDxfId=None, dataDxfId=22, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=3, uniqueName='3', name='Fecha_Inicio', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=3, headerRowDxfId=None, dataDxfId=21, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=4, uniqueName='4', name='Fecha_Vencimiento', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=4, headerRowDxfId=None, dataDxfId=20, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=5, uniqueName='5', name='POL', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=5, headerRowDxfId=None, dataDxfId=19, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=6, uniqueName='6', name='POD', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=6, headerRowDxfId=None, dataDxfId=18, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=7, uniqueName='7', name='VIA', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=7, headerRowDxfId=None, dataDxfId=17, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=8, uniqueName='8', name='NAVIERA', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=8, headerRowDxfId=None, dataDxfId=16, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=9, uniqueName='9', name='FLETE_20ST', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=9, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=10, uniqueName='10', name='FLETE_40ST', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=10, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=11, uniqueName='11', name='FLETE_40HC', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=11, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=12, uniqueName='12', name='DOCUMENTACION_BL', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=12, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=13, uniqueName='13', name='TT', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=13, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=14, uniqueName='14', name='DIAS_LIBRES', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=14, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=15, uniqueName='15', name='Moneda', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=15, headerRowDxfId=None, dataDxfId=15, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=16, uniqueName='16', name='Estado Vigencia', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=16, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None], tableStyleInfo=<openpyxl.worksheet.table.TableStyleInfo object>\nParameters:\nname='TableStyleMedium7', showFirstColumn=False, showLastColumn=False, showRowStripes=True, showColumnStripes=False"
+      ],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [],
+      "hidden_rows": [],
+      "conditional_formats": [],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "Source.Name",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B1",
+          "value": "AGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C1",
+          "value": "Fecha_Inicio",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D1",
+          "value": "Fecha_Vencimiento",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E1",
+          "value": "POL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F1",
+          "value": "POD",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "G1",
+          "value": "VIA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H1",
+          "value": "NAVIERA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I1",
+          "value": "FLETE_20ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "J1",
+          "value": "FLETE_40ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "K1",
+          "value": "FLETE_40HC",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "L1",
+          "value": "DOCUMENTACION_BL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "M1",
+          "value": "TT",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "N1",
+          "value": "DIAS_LIBRES",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "O1",
+          "value": "Moneda",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "P1",
+          "value": "Estado Vigencia",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A2",
+          "value": "CONSOLCARGO.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B2",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C2",
+          "value": "2026-11-09 00:00:00",
+          "type": "d",
+          "format": "mm-dd-yy"
+        },
+        {
+          "cell": "D2",
+          "value": "2026-11-16 00:00:00",
+          "type": "d",
+          "format": "mm-dd-yy"
+        },
+        {
+          "cell": "E2",
+          "value": "NINGBO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F2",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H2",
+          "value": "OOCL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I2",
+          "value": 9143,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "J2",
+          "value": 9196,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "K2",
+          "value": 9196,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "L2",
+          "value": 75,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "N2",
+          "value": 17,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "O2",
+          "value": "USD",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "P2",
+          "value": "VIGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A3",
+          "value": "CONSOLCARGO.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B3",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C3",
+          "value": "2026-11-09 00:00:00",
+          "type": "d",
+          "format": "mm-dd-yy"
+        },
+        {
+          "cell": "D3",
+          "value": "2026-11-16 00:00:00",
+          "type": "d",
+          "format": "mm-dd-yy"
+        },
+        {
+          "cell": "E3",
+          "value": "SHANGHAI",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F3",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H3",
+          "value": "COSCO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I3",
+          "value": 9143,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "J3",
+          "value": 9196,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "K3",
+          "value": 9196,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "L3",
+          "value": 75,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "N3",
+          "value": 17,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "O3",
+          "value": "USD",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "P3",
+          "value": "VIGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A4",
+          "value": "CONSOLCARGO.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B4",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C4",
+          "value": "2026-11-09 00:00:00",
+          "type": "d",
+          "format": "mm-dd-yy"
+        },
+        {
+          "cell": "D4",
+          "value": "2026-11-16 00:00:00",
+          "type": "d",
+          "format": "mm-dd-yy"
+        },
+        {
+          "cell": "E4",
+          "value": "ZHONGSHAN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F4",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H4",
+          "value": "COSCO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I4",
+          "value": 9248,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "J4",
+          "value": 9300,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "K4",
+          "value": 9300,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "L4",
+          "value": 75,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "N4",
+          "value": 17,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "O4",
+          "value": "USD",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "P4",
+          "value": "VIGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A5",
+          "value": "CONSOLCARGO.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B5",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C5",
+          "value": "2026-11-09 00:00:00",
+          "type": "d",
+          "format": "mm-dd-yy"
+        },
+        {
+          "cell": "D5",
+          "value": "2026-11-16 00:00:00",
+          "type": "d",
+          "format": "mm-dd-yy"
+        },
+        {
+          "cell": "E5",
+          "value": "GUANGZHOU",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F5",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H5",
+          "value": "COSCO",
+          "type": "s",
+          "format": "General"
+        }
+      ]
+    },
+    {
+      "name": "Cargos_Destino",
+      "state": "visible",
+      "rows": 104,
+      "columns": 10,
+      "nonempty": 811,
+      "formula_count": 0,
+      "errors": [],
+      "merges": [
+        "A1:F2"
+      ],
+      "validations": [],
+      "tables": [
+        "<openpyxl.worksheet.table.Table object>\nParameters:\nid=2, name='tblCargosDestino', displayName='tblCargosDestino', comment=None, ref='A4:J104', tableType=None, headerRowCount=1, insertRow=None, insertRowShift=None, totalsRowCount=None, totalsRowShown=None, published=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowBorderDxfId=None, tableBorderDxfId=None, totalsRowBorderDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, connectionId=None, autoFilter=<openpyxl.worksheet.filters.AutoFilter object>\nParameters:\nref='A4:J104', filterColumn=[], sortState=None, sortState=None, tableColumns=[<openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=1, uniqueName=None, name='Agente', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=2, uniqueName=None, name='Pais_Hoja', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=3, uniqueName=None, name='Grupo_Naviera', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=4, uniqueName=None, name='Concepto', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=5, uniqueName=None, name='Base', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=6, uniqueName=None, name='Importe', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=7, uniqueName=None, name='Puerto_Destino', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=8, uniqueName=None, name='Naviera_Aplica', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=9, uniqueName=None, name='Estado', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=10, uniqueName=None, name='Vigencia_Hasta', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None], tableStyleInfo=<openpyxl.worksheet.table.TableStyleInfo object>\nParameters:\nname='TableStyleMedium4', showFirstColumn=False, showLastColumn=False, showRowStripes=True, showColumnStripes=False"
+      ],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [],
+      "hidden_rows": [],
+      "conditional_formats": [],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "CARGOS DE DESTINO DETECTADOS EN LOS TARIFARIOS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A4",
+          "value": "Agente",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B4",
+          "value": "Pais_Hoja",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C4",
+          "value": "Grupo_Naviera",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D4",
+          "value": "Concepto",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E4",
+          "value": "Base",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F4",
+          "value": "Importe",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "G4",
+          "value": "Puerto_Destino",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H4",
+          "value": "Naviera_Aplica",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I4",
+          "value": "Estado",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "J4",
+          "value": "Vigencia_Hasta",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A5",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B5",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D5",
+          "value": "THC",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E5",
+          "value": "CONTENEDOR",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F5",
+          "value": 350,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "G5",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H5",
+          "value": "TODAS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I5",
+          "value": "VIGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A6",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B6",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D6",
+          "value": "LIMPIEZA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E6",
+          "value": "BL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F6",
+          "value": 50,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "G6",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H6",
+          "value": "TODAS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I6",
+          "value": "VIGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A7",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B7",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D7",
+          "value": "GATE IN X CTN",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E7",
+          "value": "CONTENEDOR",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F7",
+          "value": 50,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "G7",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H7",
+          "value": "TODAS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I7",
+          "value": "VIGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A8",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B8",
+          "value": "COSTA RICA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D8",
+          "value": "DOCUMENTATION FEE (EXPORT/IMPORT)",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E8",
+          "value": "BL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F8",
+          "value": 70,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "G8",
+          "value": "CALDERA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H8",
+          "value": "TODAS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I8",
+          "value": "VIGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A9",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B9",
+          "value": "COSTA RICA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D9",
+          "value": "CUSTOMS CLEARANCE FEE (TICA)",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E9",
+          "value": "BL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F9",
+          "value": 50,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "G9",
+          "value": "CALDERA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H9",
+          "value": "TODAS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I9",
+          "value": "VIGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A10",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B10",
+          "value": "COSTA RICA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D10",
+          "value": "TERMINAL HANDLING CHARGE DESTINATION",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E10",
+          "value": "CONTENEDOR",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F10",
+          "value": 500,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "G10",
+          "value": "CALDERA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H10",
+          "value": "TODAS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I10",
+          "value": "VIGENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A11",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B11",
+          "value": "COSTA RICA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D11",
+          "value": "CONTAINER INSPECTION SURCHARGE (IMPORT ONLY)",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E11",
+          "value": "CONTENEDOR",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F11",
+          "value": 45,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "G11",
+          "value": "CALDERA",
+          "type": "s",
+          "format": "General"
+        }
+      ]
+    },
+    {
+      "name": "Carga_Archivos",
+      "state": "hidden",
+      "rows": 28,
+      "columns": 8,
+      "nonempty": 29,
+      "formula_count": 0,
+      "errors": [],
+      "merges": [
+        "A3:H3",
+        "A20:H20",
+        "B5:F5",
+        "A11:H11",
+        "A7:C9",
+        "A1:H2"
+      ],
+      "validations": [],
+      "tables": [],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [],
+      "hidden_rows": [],
+      "conditional_formats": [],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "CARGA DE TARIFARIOS | PROCESO SIMPLE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A3",
+          "value": "CONFIGURACIÓN DE CARGA SEMANAL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A5",
+          "value": "Carpeta de tarifarios",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B5",
+          "value": "C:\\Tarifarios_FCL",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A7",
+          "value": "CARGAR / ACTUALIZAR ARCHIVOS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E7",
+          "value": "Última actualización",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F7",
+          "value": "Sin actualizar",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A11",
+          "value": "CONTROL DE ARCHIVOS",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A12",
+          "value": "Agente",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B12",
+          "value": "Archivo esperado",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C12",
+          "value": "Estado",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D12",
+          "value": "Fecha archivo",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E12",
+          "value": "Filas cargadas",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A13",
+          "value": "CONSOLCARGO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B13",
+          "value": "Tarifario.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C13",
+          "value": "PENDIENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A14",
+          "value": "TRANSTAINER",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B14",
+          "value": "Tarifario.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C14",
+          "value": "PENDIENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A15",
+          "value": "VANGUARD",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B15",
+          "value": "Tarifario.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C15",
+          "value": "PENDIENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A16",
+          "value": "DSV",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B16",
+          "value": "Tarifario.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C16",
+          "value": "PENDIENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A17",
+          "value": "AGENTE 5",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B17",
+          "value": "Tarifario.xlsx",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C17",
+          "value": "PENDIENTE",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A20",
+          "value": "La macro selecciona una carpeta, importa todos los archivos estandarizados y reemplaza la tabla Tarifas. Use una tabla llamada tblTarifario en cada archivo.",
+          "type": "s",
+          "format": "General"
+        }
+      ]
+    },
+    {
+      "name": "Historico",
+      "state": "visible",
+      "rows": 7,
+      "columns": 12,
+      "nonempty": 25,
+      "formula_count": 0,
+      "errors": [],
+      "merges": [
+        "A1:K2"
+      ],
+      "validations": [],
+      "tables": [
+        "<openpyxl.worksheet.table.Table object>\nParameters:\nid=3, name='tblHistorico', displayName='tblHistorico', comment=None, ref='A4:L7', tableType=None, headerRowCount=1, insertRow=None, insertRowShift=None, totalsRowCount=None, totalsRowShown=None, published=None, headerRowDxfId=14, dataDxfId=13, totalsRowDxfId=12, headerRowBorderDxfId=None, tableBorderDxfId=None, totalsRowBorderDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, connectionId=None, autoFilter=<openpyxl.worksheet.filters.AutoFilter object>\nParameters:\nref='A4:L7', filterColumn=[], sortState=None, sortState=None, tableColumns=[<openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=1, uniqueName=None, name='Fecha Cotización', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=11, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=2, uniqueName=None, name='Origen', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=10, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=3, uniqueName=None, name='Destino', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=9, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=4, uniqueName=None, name='20ST', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=8, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=5, uniqueName=None, name='40ST', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=7, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=6, uniqueName=None, name='40HC', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=6, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=7, uniqueName=None, name='FOB', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=5, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=8, uniqueName=None, name='Agente', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=4, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=9, uniqueName=None, name='Naviera', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=3, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=10, uniqueName=None, name='Costo_Total', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=2, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=11, uniqueName=None, name='Impacto_FOB', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=1, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=12, uniqueName=None, name='Columna1', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=0, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None], tableStyleInfo=<openpyxl.worksheet.table.TableStyleInfo object>\nParameters:\nname='TableStyleMedium2', showFirstColumn=False, showLastColumn=False, showRowStripes=True, showColumnStripes=False"
+      ],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [],
+      "hidden_rows": [],
+      "conditional_formats": [],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "HISTÓRICO DE COTIZACIONES",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A4",
+          "value": "Fecha Cotización",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B4",
+          "value": "Origen",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "C4",
+          "value": "Destino",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D4",
+          "value": "20ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E4",
+          "value": "40ST",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "F4",
+          "value": "40HC",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "G4",
+          "value": "FOB",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "H4",
+          "value": "Agente",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "I4",
+          "value": "Naviera",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "J4",
+          "value": "Costo_Total",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "K4",
+          "value": "Impacto_FOB",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "L4",
+          "value": "Columna1",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A7",
+          "value": "COT-20261108-003",
+          "type": "s",
+          "format": "dd\\-mmm\\-yyyy"
+        },
+        {
+          "cell": "B7",
+          "value": "2026-11-08 00:00:00",
+          "type": "d",
+          "format": "dd\\-mmm\\-yyyy"
+        },
+        {
+          "cell": "C7",
+          "value": "SHANGHAI",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "D7",
+          "value": "CARTAGENA",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "E7",
+          "value": 0,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "F7",
+          "value": 0,
+          "type": "n",
+          "format": "General"
+        },
+        {
+          "cell": "G7",
+          "value": 2,
+          "type": "n",
+          "format": "\"$\"#,##0.00"
+        },
+        {
+          "cell": "H7",
+          "value": 100000,
+          "type": "n",
+          "format": "\"$\"#,##0.00"
+        },
+        {
+          "cell": "I7",
+          "value": "DSV",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "J7",
+          "value": "COSCO",
+          "type": "s",
+          "format": "\"$\"#,##0.00"
+        },
+        {
+          "cell": "K7",
+          "value": 1300,
+          "type": "n",
+          "format": "\"$\"#,##0.00"
+        },
+        {
+          "cell": "L7",
+          "value": 0.013,
+          "type": "n",
+          "format": "0.00%"
+        }
+      ]
+    },
+    {
+      "name": "Guia",
+      "state": "hidden",
+      "rows": 19,
+      "columns": 8,
+      "nonempty": 27,
+      "formula_count": 0,
+      "errors": [],
+      "merges": [
+        "A1:H2"
+      ],
+      "validations": [],
+      "tables": [],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [],
+      "hidden_rows": [],
+      "conditional_formats": [],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "GUÍA DE USO Y CRITERIOS DE PRICING",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A4",
+          "value": "Cómo cotizar",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B4",
+          "value": "En Cotizador seleccione origen y destino, indique cantidades por equipo, número de BL y FOB. El ranking se recalcula.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A5",
+          "value": "Costo comparado",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B5",
+          "value": "Flete por equipo + BL/documentación de origen + cargos destino por contenedor + cargos destino por BL + collect fee cuando aplica.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A6",
+          "value": "Evitar error frecuente",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B6",
+          "value": "Un BL fee no se multiplica por contenedores. Los cargos por contenedor sí se multiplican por la suma de equipos.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A7",
+          "value": "Calidad de fuentes",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B7",
+          "value": "Los formatos no son uniformes. Se conservaron las ofertas numéricas y se detectaron cargos visibles. Antes de asignar, valide vigencia y conceptos no numéricos.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A8",
+          "value": "Alerta DSV",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B8",
+          "value": "El tarifario DSV contiene algunas filas COSCO con valor 450 que parecen recargo o dato incompleto. Se conservan en la base, pero deben revisarse antes de uso.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A9",
+          "value": "Quinto agente",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B9",
+          "value": "No se adjuntó un quinto tarifario. El modelo no fabrica datos y lo muestra como pendiente.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A10",
+          "value": "Actualización futura",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B10",
+          "value": "La versión estable debe exigir a cada agente una plantilla estándar con una fila por oferta y una tabla adicional de cargos. Power Query puede consolidarlas desde una carpeta.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A12",
+          "value": "Criterios visibles",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B12",
+          "value": "El comparativo muestra por separado FLETE, Origen / BL, Gastos en Origen y Gastos en destino. Gastos en Origen queda en cero cuando el tarifario no entrega un valor numérico independiente.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A13",
+          "value": "Catálogos corregidos",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B13",
+          "value": "Origen y Destino se alimentan desde la hoja oculta Catalogos. Se normalizó PUERTO CALLAO como CALLAO y se eliminaron valores ajenos a las rutas.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A14",
+          "value": "Fecha e histórico",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B14",
+          "value": "Fecha está en Cotizador!B5. GuardarHistorico agrega una fila con fecha, ruta, equipos, FOB, agente, naviera, costo total e impacto sobre FOB.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A16",
+          "value": "Carga semanal",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B16",
+          "value": "Use CargarArchivos para seleccionar la carpeta. Cada Excel debe tener hoja TARIFAS y tabla tblTarifario con encabezados estándar.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A17",
+          "value": "Gastos destino",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B17",
+          "value": "GastoDestino suma las filas VIGENTES de tblCargosDestino por Agente + Puerto_Destino + Naviera_Aplica, multiplicando CONTENEDOR por equipos y BL por número de BL.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A19",
+          "value": "Visual final",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "B19",
+          "value": "El comparativo de Cotizador quedó horizontal: una columna por agente y filas por concepto, conforme al formato solicitado.",
+          "type": "s",
+          "format": "General"
+        }
+      ]
+    },
+    {
+      "name": "Macros",
+      "state": "hidden",
+      "rows": 185,
+      "columns": 8,
+      "nonempty": 157,
+      "formula_count": 0,
+      "errors": [],
+      "merges": [
+        "A1:H2"
+      ],
+      "validations": [],
+      "tables": [],
+      "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+      "hidden_columns": [],
+      "hidden_rows": [],
+      "conditional_formats": [],
+      "sample": [
+        {
+          "cell": "A1",
+          "value": "MACROS PARA BOTONES Y HISTÓRICO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A4",
+          "value": "Alt+F11 > Insertar > Módulo > pegue el código > guarde como .xlsm > clic derecho en cada forma > Asignar macro.",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A6",
+          "value": "Option Explicit",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A7",
+          "value": "Sub Cotizar()",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A8",
+          "value": "    Dim w As Worksheet",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A9",
+          "value": "    Set w = ThisWorkbook.Worksheets(\"Cotizador\")",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A10",
+          "value": "    If w.Range(\"B6\").Value = \"\" Or w.Range(\"B7\").Value = \"\" Then",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A11",
+          "value": "        MsgBox \"Seleccione Origen y Destino.\", vbExclamation: Exit Sub",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A12",
+          "value": "    End If",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A13",
+          "value": "    If WorksheetFunction.Sum(w.Range(\"B8:B10\")) = 0 Then",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A14",
+          "value": "        MsgBox \"Ingrese por lo menos un contenedor.\", vbExclamation: Exit Sub",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A15",
+          "value": "    End If",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A16",
+          "value": "    Application.CalculateFull",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A17",
+          "value": "    If w.Range(\"E9\").Value = 0 Then",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A18",
+          "value": "        MsgBox \"No hay tarifa para esta combinación de ruta/equipo.\", vbInformation",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A19",
+          "value": "    Else",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A20",
+          "value": "        MsgBox \"Cotización calculada. Mejor agente: \" & w.Range(\"E7\").Value, vbInformation",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A21",
+          "value": "    End If",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A22",
+          "value": "End Sub",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A24",
+          "value": "Sub GuardarHistorico()",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A25",
+          "value": "    Dim c As Worksheet, h As Worksheet, t As ListObject, r As ListRow",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A26",
+          "value": "    Set c = Sheets(\"Cotizador\"): Set h = Sheets(\"Historico\"): Set t = h.ListObjects(\"tblHistorico\")",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A27",
+          "value": "    Application.CalculateFull",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A28",
+          "value": "    If c.Range(\"E9\").Value <= 0 Then MsgBox \"Primero genere una cotización válida.\", vbExclamation: Exit Sub",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A29",
+          "value": "    If t.ListRows.Count = 1 And WorksheetFunction.CountA(t.ListRows(1).Range) = 0 Then Set r = t.ListRows(1) Else Set r = t.ListRows.Add",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A30",
+          "value": "    With r.Range",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A31",
+          "value": "        .Cells(1, 1) = c.Range(\"B5\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A32",
+          "value": "        .Cells(1, 2) = c.Range(\"B6\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A33",
+          "value": "        .Cells(1, 3) = c.Range(\"B7\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A34",
+          "value": "        .Cells(1, 4) = c.Range(\"B8\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A35",
+          "value": "        .Cells(1, 5) = c.Range(\"B9\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A36",
+          "value": "        .Cells(1, 6) = c.Range(\"B10\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A37",
+          "value": "        .Cells(1, 7) = c.Range(\"B12\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A38",
+          "value": "        .Cells(1, 8) = c.Range(\"E7\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A39",
+          "value": "        .Cells(1, 9) = c.Range(\"E8\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A40",
+          "value": "        .Cells(1, 10) = c.Range(\"E9\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A41",
+          "value": "        .Cells(1, 11) = c.Range(\"E11\").Value",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A42",
+          "value": "    End With",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A43",
+          "value": "    MsgBox \"Cotización guardada en Histórico.\", vbInformation",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A44",
+          "value": "End Sub",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A46",
+          "value": "Sub Limpiar()",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A47",
+          "value": "    With Sheets(\"Cotizador\")",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A48",
+          "value": "        .Range(\"B6:B12\").ClearContents",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A49",
+          "value": "        .Range(\"B5\").Value = Date",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A50",
+          "value": "        .Range(\"B8:B11\").Value = 0",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A51",
+          "value": "        .Range(\"B11\").Value = 1",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A52",
+          "value": "    End With",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A53",
+          "value": "End Sub",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A56",
+          "value": "MACROS NUEVAS: CARGAR ARCHIVOS Y TOTALIZAR GASTOS EN DESTINO",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A58",
+          "value": "Sub CargarArchivos()",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A59",
+          "value": "    Dim fd As FileDialog, ruta As String, archivo As String",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A60",
+          "value": "    Dim wbO As Workbook, wsO As Worksheet, loO As ListObject",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A61",
+          "value": "    Dim wsT As Worksheet, loT As ListObject, nueva As ListRow",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A62",
+          "value": "    Dim fila As ListRow, agente As String",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A63",
+          "value": "    Dim totalArchivos As Long, totalFilas As Long",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A65",
+          "value": "    Set fd = Application.FileDialog(msoFileDialogFolderPicker)",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A66",
+          "value": "    With fd",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A67",
+          "value": "        .Title = \"Seleccione la carpeta con los tarifarios estandarizados\"",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A68",
+          "value": "        If .Show <> -1 Then Exit Sub",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A69",
+          "value": "        ruta = .SelectedItems(1) & \"\\\"",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A70",
+          "value": "    End With",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A72",
+          "value": "    Application.ScreenUpdating = False",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A73",
+          "value": "    Application.EnableEvents = False",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A74",
+          "value": "    Set wsT = ThisWorkbook.Worksheets(\"Tarifas\")",
+          "type": "s",
+          "format": "General"
+        },
+        {
+          "cell": "A75",
+          "value": "    Set loT = wsT.ListObjects(\"tblTarifas\")",
+          "type": "s",
+          "format": "General"
+        }
+      ]
+    }
+  ],
+  "package_parts": [
+    "[Content_Types].xml",
+    "_rels/.rels",
+    "xl/workbook.xml",
+    "xl/_rels/workbook.xml.rels",
+    "xl/worksheets/sheet1.xml",
+    "xl/worksheets/sheet2.xml",
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml",
+    "xl/worksheets/sheet5.xml",
+    "xl/worksheets/sheet6.xml",
+    "xl/worksheets/sheet7.xml",
+    "xl/worksheets/sheet8.xml",
+    "xl/worksheets/sheet9.xml",
+    "xl/worksheets/sheet10.xml",
+    "xl/theme/theme1.xml",
+    "xl/worksheets/_rels/sheet5.xml.rels",
+    "xl/styles.xml",
+    "xl/sharedStrings.xml",
+    "xl/drawings/drawing1.xml",
+    "xl/drawings/vmlDrawing1.vml",
+    "xl/worksheets/_rels/sheet8.xml.rels",
+    "xl/drawings/_rels/drawing1.xml.rels",
+    "xl/webextensions/_rels/taskpanes.xml.rels",
+    "xl/media/image1.png",
+    "xl/worksheets/_rels/sheet6.xml.rels",
+    "xl/vbaProject.bin",
+    "xl/webextensions/taskpanes.xml",
+    "xl/webextensions/webextension1.xml",
+    "xl/worksheets/_rels/sheet1.xml.rels",
+    "xl/worksheets/_rels/sheet4.xml.rels",
+    "xl/connections.xml",
+    "xl/ctrlProps/ctrlProp1.xml",
+    "xl/ctrlProps/ctrlProp2.xml",
+    "xl/ctrlProps/ctrlProp3.xml",
+    "docProps/core.xml",
+    "docProps/app.xml",
+    "xl/tables/table2.xml",
+    "xl/printerSettings/printerSettings1.bin",
+    "xl/tables/table1.xml",
+    "customXml/item1.xml",
+    "customXml/itemProps1.xml",
+    "docMetadata/LabelInfo.xml",
+    "xl/queryTables/queryTable1.xml",
+    "xl/tables/table3.xml",
+    "xl/tables/table4.xml",
+    "xl/tables/_rels/table2.xml.rels",
+    "customXml/_rels/item1.xml.rels",
+    "xl/calcChain.xml",
+    "docProps/custom.xml"
+  ],
+  "profile": {
+    "formula_families": {
+      "=Tarifas!A5": 407,
+      "=Tarifas!B5": 407,
+      "=Tarifas!G5": 407,
+      "=Tarifas!D5": 407,
+      "=Tarifas!E5": 407,
+      "=Tarifas!H5": 407,
+      "=Tarifas!I5": 407,
+      "=Tarifas!J5": 407,
+      "=IF(OR(D5<>Cotizador!$B$6,E5<>Cotizador!$B$7),0,F5*Cotizador!$B$8+G5*Cotizador!$B$9+H5*Cotizador!$B$10)": 407,
+      "=Tarifas!K5*Cotizador!$B$11": 407,
+      "=Tarifas!L5*SUM(Cotizador!$B$8:$B$9)": 407,
+      "=(Tarifas!M5*SUM(Cotizador!$B$8:$B$9))+(Tarifas!N5*Cotizador!$B$11)": 407,
+      "=Tarifas!O5*(I5+J5+K5)": 407,
+      "=Tarifas!P5": 407,
+      "=Tarifas!Q5": 407
+    },
+    "duplicate_active_rows": 132,
+    "missing_route_rows": 126,
+    "missing_freight20": 146,
+    "missing_documentation": 251,
+    "missing_currency": 204,
+    "agents": {
+      "CONSOLCARGO": 117,
+      "DSV": 126,
+      "TRANSTAINER": 126,
+      "VANGUARD": 117
+    }
+  }
+}

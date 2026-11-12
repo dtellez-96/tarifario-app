@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "name": "Catalogos",
+    "state": "hidden",
+    "rows": 12,
+    "columns": 2,
+    "nonempty": 23,
+    "formula_count": 0,
+    "errors": [],
+    "merges": [],
+    "validations": [],
+    "tables": [],
+    "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+    "hidden_columns": [],
+    "hidden_rows": [],
+    "conditional_formats": [],
+    "sample": [
+      {
+        "cell": "A1",
+        "value": "ORIGENES",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B1",
+        "value": "DESTINOS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A2",
+        "value": "GUANGZHOU",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B2",
+        "value": "BUENOS AIRES",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A3",
+        "value": "JIANGMEN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B3",
+        "value": "CALDERA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A4",
+        "value": "NANSHA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B4",
+        "value": "CALLAO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A5",
+        "value": "NINGBO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B5",
+        "value": "CARTAGENA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A6",
+        "value": "QINGDAO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B6",
+        "value": "CAUCEDO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A7",
+        "value": "SHANGHAI",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B7",
+        "value": "GUAYAQUIL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A8",
+        "value": "SHENZHEN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B8",
+        "value": "MOIN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A9",
+        "value": "TIANJIN (XINGANG)",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B9",
+        "value": "MONTEVIDEO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A10",
+        "value": "XIAMEN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B10",
+        "value": "POSORJA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A11",
+        "value": "ZHONGSHAN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B11",
+        "value": "PUERTO QUETZAL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B12",
+        "value": "RIO HAINA",
+        "type": "s",
+        "format": "General"
+      }
+    ]
+  },
+  "cells": [
+    {
+      "cell": "A1",
+      "value": "ORIGENES",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B1",
+      "value": "DESTINOS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A2",
+      "value": "GUANGZHOU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B2",
+      "value": "BUENOS AIRES",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A3",
+      "value": "JIANGMEN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B3",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A4",
+      "value": "NANSHA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B4",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A5",
+      "value": "NINGBO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B5",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A6",
+      "value": "QINGDAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B6",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A7",
+      "value": "SHANGHAI",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B7",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A8",
+      "value": "SHENZHEN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B8",
+      "value": "MOIN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A9",
+      "value": "TIANJIN (XINGANG)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B9",
+      "value": "MONTEVIDEO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A10",
+      "value": "XIAMEN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B10",
+      "value": "POSORJA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A11",
+      "value": "ZHONGSHAN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B11",
+      "value": "PUERTO QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B12",
+      "value": "RIO HAINA",
+      "type": "s",
+      "format": "General"
+    }
+  ],
+  "formulas": []
+}

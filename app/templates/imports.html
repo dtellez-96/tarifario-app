@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-3xl font-bold">Importaciones versionadas</h1>
+<div class="alert alert-info">Solo libro consolidado con las cuatro tablas originales. No ejecuta VBA ni actualiza conexiones. Las cargas semanales de archivos individuales son una fase posterior.</div>
+<form method="post" enctype="multipart/form-data" class="card bg-base-100 p-6 gap-3">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label for="workbook">Libro XLSM / XLSX (maximo 10 MB)</label>
+  <input id="workbook" class="file-input file-input-bordered w-full" type="file" name="workbook" accept=".xlsm,.xlsx" required>
+  <button class="btn btn-primary self-start">Importar sin sobrescribir lotes previos</button>
+</form>
+{% for batch in batches %}
+<section class="card bg-base-100 p-5 gap-2">
+  <h2 class="card-title">Lote {{ batch.id }} - {{ batch.filename }}</h2>
+  <p class="break-all">SHA-256: {{ batch.sha256 }}</p>
+  <p>{{ batch.summary.rates }} ofertas con ruta; {{ batch.summary.quarantined_rates }} en cuarentena; {{ batch.summary.charges }} cargos; {{ batch.summary.rows_with_issues }} filas con incidencias.</p>
+  <div class="flex gap-3"><a class="link" href="{{ url_for('web.import_issues', batch_id=batch.id) }}">Incidencias JSON</a><a class="link" href="{{ url_for('web.catalog', kind='rates', batch_id=batch.id) }}">Ver tarifas</a></div>
+</section>
+{% endfor %}
+{% endblock %}

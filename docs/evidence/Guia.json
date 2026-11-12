@@ -1,0 +1,349 @@
+{
+  "metadata": {
+    "name": "Guia",
+    "state": "hidden",
+    "rows": 19,
+    "columns": 8,
+    "nonempty": 27,
+    "formula_count": 0,
+    "errors": [],
+    "merges": [
+      "A1:H2"
+    ],
+    "validations": [],
+    "tables": [],
+    "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+    "hidden_columns": [],
+    "hidden_rows": [],
+    "conditional_formats": [],
+    "sample": [
+      {
+        "cell": "A1",
+        "value": "GUÍA DE USO Y CRITERIOS DE PRICING",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A4",
+        "value": "Cómo cotizar",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B4",
+        "value": "En Cotizador seleccione origen y destino, indique cantidades por equipo, número de BL y FOB. El ranking se recalcula.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A5",
+        "value": "Costo comparado",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B5",
+        "value": "Flete por equipo + BL/documentación de origen + cargos destino por contenedor + cargos destino por BL + collect fee cuando aplica.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A6",
+        "value": "Evitar error frecuente",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B6",
+        "value": "Un BL fee no se multiplica por contenedores. Los cargos por contenedor sí se multiplican por la suma de equipos.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A7",
+        "value": "Calidad de fuentes",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B7",
+        "value": "Los formatos no son uniformes. Se conservaron las ofertas numéricas y se detectaron cargos visibles. Antes de asignar, valide vigencia y conceptos no numéricos.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A8",
+        "value": "Alerta DSV",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B8",
+        "value": "El tarifario DSV contiene algunas filas COSCO con valor 450 que parecen recargo o dato incompleto. Se conservan en la base, pero deben revisarse antes de uso.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A9",
+        "value": "Quinto agente",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B9",
+        "value": "No se adjuntó un quinto tarifario. El modelo no fabrica datos y lo muestra como pendiente.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A10",
+        "value": "Actualización futura",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B10",
+        "value": "La versión estable debe exigir a cada agente una plantilla estándar con una fila por oferta y una tabla adicional de cargos. Power Query puede consolidarlas desde una carpeta.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A12",
+        "value": "Criterios visibles",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B12",
+        "value": "El comparativo muestra por separado FLETE, Origen / BL, Gastos en Origen y Gastos en destino. Gastos en Origen queda en cero cuando el tarifario no entrega un valor numérico independiente.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A13",
+        "value": "Catálogos corregidos",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B13",
+        "value": "Origen y Destino se alimentan desde la hoja oculta Catalogos. Se normalizó PUERTO CALLAO como CALLAO y se eliminaron valores ajenos a las rutas.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A14",
+        "value": "Fecha e histórico",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B14",
+        "value": "Fecha está en Cotizador!B5. GuardarHistorico agrega una fila con fecha, ruta, equipos, FOB, agente, naviera, costo total e impacto sobre FOB.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A16",
+        "value": "Carga semanal",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B16",
+        "value": "Use CargarArchivos para seleccionar la carpeta. Cada Excel debe tener hoja TARIFAS y tabla tblTarifario con encabezados estándar.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A17",
+        "value": "Gastos destino",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B17",
+        "value": "GastoDestino suma las filas VIGENTES de tblCargosDestino por Agente + Puerto_Destino + Naviera_Aplica, multiplicando CONTENEDOR por equipos y BL por número de BL.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A19",
+        "value": "Visual final",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B19",
+        "value": "El comparativo de Cotizador quedó horizontal: una columna por agente y filas por concepto, conforme al formato solicitado.",
+        "type": "s",
+        "format": "General"
+      }
+    ]
+  },
+  "cells": [
+    {
+      "cell": "A1",
+      "value": "GUÍA DE USO Y CRITERIOS DE PRICING",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A4",
+      "value": "Cómo cotizar",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B4",
+      "value": "En Cotizador seleccione origen y destino, indique cantidades por equipo, número de BL y FOB. El ranking se recalcula.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A5",
+      "value": "Costo comparado",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B5",
+      "value": "Flete por equipo + BL/documentación de origen + cargos destino por contenedor + cargos destino por BL + collect fee cuando aplica.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A6",
+      "value": "Evitar error frecuente",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B6",
+      "value": "Un BL fee no se multiplica por contenedores. Los cargos por contenedor sí se multiplican por la suma de equipos.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A7",
+      "value": "Calidad de fuentes",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B7",
+      "value": "Los formatos no son uniformes. Se conservaron las ofertas numéricas y se detectaron cargos visibles. Antes de asignar, valide vigencia y conceptos no numéricos.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A8",
+      "value": "Alerta DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B8",
+      "value": "El tarifario DSV contiene algunas filas COSCO con valor 450 que parecen recargo o dato incompleto. Se conservan en la base, pero deben revisarse antes de uso.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A9",
+      "value": "Quinto agente",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B9",
+      "value": "No se adjuntó un quinto tarifario. El modelo no fabrica datos y lo muestra como pendiente.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A10",
+      "value": "Actualización futura",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B10",
+      "value": "La versión estable debe exigir a cada agente una plantilla estándar con una fila por oferta y una tabla adicional de cargos. Power Query puede consolidarlas desde una carpeta.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A12",
+      "value": "Criterios visibles",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B12",
+      "value": "El comparativo muestra por separado FLETE, Origen / BL, Gastos en Origen y Gastos en destino. Gastos en Origen queda en cero cuando el tarifario no entrega un valor numérico independiente.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A13",
+      "value": "Catálogos corregidos",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B13",
+      "value": "Origen y Destino se alimentan desde la hoja oculta Catalogos. Se normalizó PUERTO CALLAO como CALLAO y se eliminaron valores ajenos a las rutas.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A14",
+      "value": "Fecha e histórico",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B14",
+      "value": "Fecha está en Cotizador!B5. GuardarHistorico agrega una fila con fecha, ruta, equipos, FOB, agente, naviera, costo total e impacto sobre FOB.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A16",
+      "value": "Carga semanal",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B16",
+      "value": "Use CargarArchivos para seleccionar la carpeta. Cada Excel debe tener hoja TARIFAS y tabla tblTarifario con encabezados estándar.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A17",
+      "value": "Gastos destino",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B17",
+      "value": "GastoDestino suma las filas VIGENTES de tblCargosDestino por Agente + Puerto_Destino + Naviera_Aplica, multiplicando CONTENEDOR por equipos y BL por número de BL.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A19",
+      "value": "Visual final",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B19",
+      "value": "El comparativo de Cotizador quedó horizontal: una columna por agente y filas por concepto, conforme al formato solicitado.",
+      "type": "s",
+      "format": "General"
+    }
+  ],
+  "formulas": []
+}

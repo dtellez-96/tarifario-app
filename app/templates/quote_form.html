@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-heading">
+  <span class="page-eyebrow">COTIZACIONES / NUEVA ESTIMACION</span>
+  <h1 class="text-3xl font-bold">Nueva cotizacion FCL</h1>
+  <p>Configure su embarque y compare las alternativas disponibles por agente.</p>
+</div>
+<div role="note" class="alert alert-warning">Resultados provisionales. USD nominal; no incluyen conceptos no informados ni autorizacion de compra.</div>
+{% if not batches %}
+<div class="alert">Importe primero el libro consolidado desde <a class="link" href="{{ url_for('web.imports') }}">Importaciones</a>.</div>
+{% else %}
+<form action="{{ url_for('web.create_quote') }}" method="post" class="card bg-base-100 quote-card" id="quote-form">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <fieldset class="quote-section">
+  <legend><span class="section-number">01</span>Datos de la cotizacion</legend>
+  <div class="grid md:grid-cols-3 gap-4">
+    <label class="form-control">Fecha de cotizacion
+      <input class="input input-bordered w-full" type="date" name="quote_date" value="{{ today }}" required>
+    </label>
+    <label class="form-control">Lote de datos
+      <select class="select select-bordered w-full" name="batch_id" required>
+        {% for batch in batches %}<option value="{{ batch.id }}">#{{ batch.id }} - {{ batch.filename }}</option>{% endfor %}
+      </select>
+    </label>
+    <label class="form-control">Modo
+      <select class="select select-bordered w-full" name="mode">
+        <option value="strict">Estricto (recomendado)</option>
+        <option value="legacy">Compatibilidad VBA - solo auditoria</option>
+      </select>
+    </label>
+  </div>
+  </fieldset>
+  <fieldset class="quote-section">
+  <legend><span class="section-number">02</span>Ruta del embarque</legend>
+  <div class="grid md:grid-cols-2 gap-4">
+    {% for name, label, flag in [('origin','Origen','is_origin'),('destination','Destino','is_destination')] %}
+    <label class="form-control">{{ label }}
+      <select class="select select-bordered w-full" name="{{ name }}" required>
+        <option value="">Seleccione...</option>
+        {% for port in ports if port[flag] %}<option>{{ port.name }}</option>{% endfor %}
+      </select>
+    </label>
+    {% endfor %}
+  </div>
+  </fieldset>
+  <fieldset class="quote-section">
+  <legend><span class="section-number">03</span>Equipos y valor de la carga</legend>
+  <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
+    {% for name, label, default in [('quantity20','Cantidad 20 ST',0),('quantity40st','Cantidad 40 ST',0),('quantity40hc','Cantidad 40 HC',0),('bl','Numero de BL',1)] %}
+    <label class="form-control">{{ label }}
+      <input class="input input-bordered w-full" name="{{ name }}" type="number" min="{{ 1 if name == 'bl' else 0 }}" max="50" step="1" value="{{ default }}" required>
+    </label>
+    {% endfor %}
+    <label class="form-control">FOB USD (0 = no informado)
+      <input class="input input-bordered w-full" type="number" name="fob" value="0" min="0" max="999999999999" step="0.0001" required>
+    </label>
+  </div>
+  </fieldset>
+  <div class="quote-actions">
+    <p id="container-count" aria-live="polite">Seleccione al menos un contenedor.</p>
+    <div>
+      <a class="btn btn-ghost" href="{{ url_for('web.home') }}">Limpiar / nueva</a>
+      <button class="btn btn-primary" type="submit">Cotizar</button>
+    </div>
+  </div>
+</form>
+{% endif %}
+{% endblock %}

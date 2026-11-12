@@ -1,0 +1,688 @@
+{
+  "metadata": {
+    "name": "Cotizador",
+    "state": "visible",
+    "rows": 50,
+    "columns": 11,
+    "nonempty": 51,
+    "formula_count": 5,
+    "errors": [],
+    "merges": [
+      "E9:F9",
+      "E12:F12",
+      "A34:B36",
+      "A1:J2",
+      "E34:F36",
+      "C34:D36",
+      "D5:F5",
+      "E7:F7",
+      "E10:F10",
+      "A14:F14",
+      "E11:F11",
+      "A3:J3",
+      "G34:J36",
+      "A38:J38",
+      "D6:F6",
+      "E8:F8"
+    ],
+    "validations": [
+      "<openpyxl.worksheet.datavalidation.DataValidation object>\nParameters:\nsqref=<MultiCellRange [B6]>, showDropDown=False, showInputMessage=False, showErrorMessage=False, allowBlank=False, errorTitle=None, error=None, promptTitle=None, prompt=None, type='list', errorStyle=None, imeMode=None, operator=None, formula1='ListaOrigenes', formula2=None",
+      "<openpyxl.worksheet.datavalidation.DataValidation object>\nParameters:\nsqref=<MultiCellRange [B7]>, showDropDown=False, showInputMessage=False, showErrorMessage=False, allowBlank=False, errorTitle=None, error=None, promptTitle=None, prompt=None, type='list', errorStyle=None, imeMode=None, operator=None, formula1='ListaDestinos', formula2=None",
+      "<openpyxl.worksheet.datavalidation.DataValidation object>\nParameters:\nsqref=<MultiCellRange [B8:B11]>, showDropDown=False, showInputMessage=False, showErrorMessage=False, allowBlank=False, errorTitle=None, error=None, promptTitle=None, prompt=None, type='whole', errorStyle=None, imeMode=None, operator=None, formula1='0', formula2='50'"
+    ],
+    "tables": [],
+    "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+    "hidden_columns": [
+      "K"
+    ],
+    "hidden_rows": [],
+    "conditional_formats": [
+      "<ConditionalFormatting B15:F21 B22:G22 B23:F23 B25:B31 C24:F31>",
+      "<ConditionalFormatting B29:F29>",
+      "<ConditionalFormatting B24>"
+    ],
+    "sample": [
+      {
+        "cell": "A1",
+        "value": "COTIZADOR FCL | SIMPLE Y AUTOMÁTICO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A3",
+        "value": "Seleccione ruta y cantidades. El resultado compara costos completos, no solo el flete marítimo.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A5",
+        "value": "Fecha de cotización",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B5",
+        "value": "2026-11-09 00:00:00",
+        "type": "d",
+        "format": "dd\\-mmm\\-yyyy"
+      },
+      {
+        "cell": "A6",
+        "value": "Origen",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D6",
+        "value": "MEJOR OPCIÓN CALCULABLE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A7",
+        "value": "Destino",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D7",
+        "value": "Agente",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A8",
+        "value": "Cantidad 20 ST",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B8",
+        "value": 0,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "D8",
+        "value": "Naviera",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A9",
+        "value": "Cantidad 40 ST",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B9",
+        "value": 0,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "D9",
+        "value": "Costo total",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A10",
+        "value": "Cantidad 40 HC",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B10",
+        "value": 0,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "D10",
+        "value": "Costo / contenedor",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A11",
+        "value": "Número de BL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B11",
+        "value": 1,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "D11",
+        "value": "Impacto / FOB",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A12",
+        "value": "Valor FOB USD",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D12",
+        "value": "TT / libres",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A14",
+        "value": "COMPARATIVO POR AGENTE / FORWARDER",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A15",
+        "value": "AGENTE / FORWARDER",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B15",
+        "value": "SIN OPCIÓN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "C15",
+        "value": "SIN OPCIÓN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D15",
+        "value": "SIN OPCIÓN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E15",
+        "value": "SIN OPCIÓN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F15",
+        "value": "SIN OPCIÓN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A16",
+        "value": "Naviera",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A17",
+        "value": "Flete 20' ST",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "K17",
+        "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),1)),\"\")",
+        "type": "f",
+        "format": "General"
+      },
+      {
+        "cell": "A18",
+        "value": "Flete 40' ST",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "K18",
+        "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),2)),\"\")",
+        "type": "f",
+        "format": "General"
+      },
+      {
+        "cell": "A19",
+        "value": "Flete 40' HC",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "K19",
+        "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),3)),\"\")",
+        "type": "f",
+        "format": "General"
+      },
+      {
+        "cell": "A20",
+        "value": "Origen / BL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "K20",
+        "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),4)),\"\")",
+        "type": "f",
+        "format": "General"
+      },
+      {
+        "cell": "A21",
+        "value": "Gastos en origen",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "K21",
+        "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),5)),\"\")",
+        "type": "f",
+        "format": "General"
+      },
+      {
+        "cell": "A22",
+        "value": "Flete marítimo total",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A23",
+        "value": "Llenado del contenedor",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A24",
+        "value": "Gastos en destino",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A25",
+        "value": "COSTO TOTAL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A26",
+        "value": "Costo medio / contenedor",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A27",
+        "value": "Tránsito estimado",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A28",
+        "value": "Días libres",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A29",
+        "value": "Estado de la tarifa",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A30",
+        "value": "Pendientes / validación",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A31",
+        "value": "RANKING POR PRECIO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A38",
+        "value": "La tabla compara una opción por agente. Gastos en destino se totalizan desde tblCargosDestino.",
+        "type": "s",
+        "format": "General"
+      }
+    ]
+  },
+  "cells": [
+    {
+      "cell": "A1",
+      "value": "COTIZADOR FCL | SIMPLE Y AUTOMÁTICO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A3",
+      "value": "Seleccione ruta y cantidades. El resultado compara costos completos, no solo el flete marítimo.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A5",
+      "value": "Fecha de cotización",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B5",
+      "value": "2026-11-09 00:00:00",
+      "type": "d",
+      "format": "dd\\-mmm\\-yyyy"
+    },
+    {
+      "cell": "A6",
+      "value": "Origen",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D6",
+      "value": "MEJOR OPCIÓN CALCULABLE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A7",
+      "value": "Destino",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D7",
+      "value": "Agente",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A8",
+      "value": "Cantidad 20 ST",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B8",
+      "value": 0,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "D8",
+      "value": "Naviera",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A9",
+      "value": "Cantidad 40 ST",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B9",
+      "value": 0,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "D9",
+      "value": "Costo total",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A10",
+      "value": "Cantidad 40 HC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B10",
+      "value": 0,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "D10",
+      "value": "Costo / contenedor",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A11",
+      "value": "Número de BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B11",
+      "value": 1,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "D11",
+      "value": "Impacto / FOB",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A12",
+      "value": "Valor FOB USD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D12",
+      "value": "TT / libres",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A14",
+      "value": "COMPARATIVO POR AGENTE / FORWARDER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A15",
+      "value": "AGENTE / FORWARDER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B15",
+      "value": "SIN OPCIÓN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "C15",
+      "value": "SIN OPCIÓN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D15",
+      "value": "SIN OPCIÓN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E15",
+      "value": "SIN OPCIÓN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F15",
+      "value": "SIN OPCIÓN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A16",
+      "value": "Naviera",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A17",
+      "value": "Flete 20' ST",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "K17",
+      "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),1)),\"\")",
+      "type": "f",
+      "format": "General"
+    },
+    {
+      "cell": "A18",
+      "value": "Flete 40' ST",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "K18",
+      "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),2)),\"\")",
+      "type": "f",
+      "format": "General"
+    },
+    {
+      "cell": "A19",
+      "value": "Flete 40' HC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "K19",
+      "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),3)),\"\")",
+      "type": "f",
+      "format": "General"
+    },
+    {
+      "cell": "A20",
+      "value": "Origen / BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "K20",
+      "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),4)),\"\")",
+      "type": "f",
+      "format": "General"
+    },
+    {
+      "cell": "A21",
+      "value": "Gastos en origen",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "K21",
+      "value": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),5)),\"\")",
+      "type": "f",
+      "format": "General"
+    },
+    {
+      "cell": "A22",
+      "value": "Flete marítimo total",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A23",
+      "value": "Llenado del contenedor",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A24",
+      "value": "Gastos en destino",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A25",
+      "value": "COSTO TOTAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A26",
+      "value": "Costo medio / contenedor",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A27",
+      "value": "Tránsito estimado",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A28",
+      "value": "Días libres",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A29",
+      "value": "Estado de la tarifa",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A30",
+      "value": "Pendientes / validación",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A31",
+      "value": "RANKING POR PRECIO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A38",
+      "value": "La tabla compara una opción por agente. Gastos en destino se totalizan desde tblCargosDestino.",
+      "type": "s",
+      "format": "General"
+    }
+  ],
+  "formulas": [
+    {
+      "cell": "K17",
+      "formula": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),1)),\"\")",
+      "cached": null
+    },
+    {
+      "cell": "K18",
+      "formula": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),2)),\"\")",
+      "cached": null
+    },
+    {
+      "cell": "K19",
+      "formula": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),3)),\"\")",
+      "cached": null
+    },
+    {
+      "cell": "K20",
+      "formula": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),4)),\"\")",
+      "cached": null
+    },
+    {
+      "cell": "K21",
+      "formula": "=IFERROR(_xlfn.SINGLE(_xludf.AGGREGATE(15,6,_xlfn.SINGLE(Comparativo!#REF!)/(_xlfn.SINGLE(Comparativo!#REF!)>0),5)),\"\")",
+      "cached": null
+    }
+  ]
+}

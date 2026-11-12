@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% from "_pagination.html" import pagination_controls %}
+{% block content %}
+<h1 class="text-3xl font-bold">{{ title }}</h1>
+<p>Solo lectura en este prototipo; {{ page.total }} registros. Edicion y aprobacion de catalogos pendientes.</p>
+<div class="card bg-base-100">
+<div class="overflow-x-auto table-scroll" id="results-table" role="region" aria-label="{{ title }}" tabindex="0"><table class="table table-zebra" aria-describedby="results-summary">
+<caption class="sr-only">{{ title }}</caption>
+<thead><tr>{% for col in columns %}<th scope="col">{{ col }}</th>{% endfor %}</tr></thead>
+<tbody>{% for item in page.items %}<tr>{% for col in columns %}<td>
+{% if col == 'agent_id' %}{{ item.agent.name }}
+{% elif col == 'origin_id' %}{{ item.origin.name }}
+{% elif col == 'destination_id' %}{{ item.destination.name }}
+{% else %}{{ item[col] if item[col] is not none else 'No informado' }}{% endif %}
+</td>{% endfor %}</tr>{% else %}<tr><td colspan="{{ columns|length }}" class="text-center">Sin registros para los filtros seleccionados.</td></tr>{% endfor %}</tbody>
+</table></div>
+{{ pagination_controls(page, 'web.catalog', title, {'kind': kind, 'batch_id': request.args.get('batch_id')}) }}
+</div>
+{% endblock %}

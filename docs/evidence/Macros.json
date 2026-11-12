@@ -1,0 +1,1357 @@
+{
+  "metadata": {
+    "name": "Macros",
+    "state": "hidden",
+    "rows": 185,
+    "columns": 8,
+    "nonempty": 157,
+    "formula_count": 0,
+    "errors": [],
+    "merges": [
+      "A1:H2"
+    ],
+    "validations": [],
+    "tables": [],
+    "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+    "hidden_columns": [],
+    "hidden_rows": [],
+    "conditional_formats": [],
+    "sample": [
+      {
+        "cell": "A1",
+        "value": "MACROS PARA BOTONES Y HISTÓRICO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A4",
+        "value": "Alt+F11 > Insertar > Módulo > pegue el código > guarde como .xlsm > clic derecho en cada forma > Asignar macro.",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A6",
+        "value": "Option Explicit",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A7",
+        "value": "Sub Cotizar()",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A8",
+        "value": "    Dim w As Worksheet",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A9",
+        "value": "    Set w = ThisWorkbook.Worksheets(\"Cotizador\")",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A10",
+        "value": "    If w.Range(\"B6\").Value = \"\" Or w.Range(\"B7\").Value = \"\" Then",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A11",
+        "value": "        MsgBox \"Seleccione Origen y Destino.\", vbExclamation: Exit Sub",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A12",
+        "value": "    End If",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A13",
+        "value": "    If WorksheetFunction.Sum(w.Range(\"B8:B10\")) = 0 Then",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A14",
+        "value": "        MsgBox \"Ingrese por lo menos un contenedor.\", vbExclamation: Exit Sub",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A15",
+        "value": "    End If",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A16",
+        "value": "    Application.CalculateFull",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A17",
+        "value": "    If w.Range(\"E9\").Value = 0 Then",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A18",
+        "value": "        MsgBox \"No hay tarifa para esta combinación de ruta/equipo.\", vbInformation",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A19",
+        "value": "    Else",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A20",
+        "value": "        MsgBox \"Cotización calculada. Mejor agente: \" & w.Range(\"E7\").Value, vbInformation",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A21",
+        "value": "    End If",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A22",
+        "value": "End Sub",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A24",
+        "value": "Sub GuardarHistorico()",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A25",
+        "value": "    Dim c As Worksheet, h As Worksheet, t As ListObject, r As ListRow",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A26",
+        "value": "    Set c = Sheets(\"Cotizador\"): Set h = Sheets(\"Historico\"): Set t = h.ListObjects(\"tblHistorico\")",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A27",
+        "value": "    Application.CalculateFull",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A28",
+        "value": "    If c.Range(\"E9\").Value <= 0 Then MsgBox \"Primero genere una cotización válida.\", vbExclamation: Exit Sub",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A29",
+        "value": "    If t.ListRows.Count = 1 And WorksheetFunction.CountA(t.ListRows(1).Range) = 0 Then Set r = t.ListRows(1) Else Set r = t.ListRows.Add",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A30",
+        "value": "    With r.Range",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A31",
+        "value": "        .Cells(1, 1) = c.Range(\"B5\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A32",
+        "value": "        .Cells(1, 2) = c.Range(\"B6\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A33",
+        "value": "        .Cells(1, 3) = c.Range(\"B7\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A34",
+        "value": "        .Cells(1, 4) = c.Range(\"B8\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A35",
+        "value": "        .Cells(1, 5) = c.Range(\"B9\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A36",
+        "value": "        .Cells(1, 6) = c.Range(\"B10\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A37",
+        "value": "        .Cells(1, 7) = c.Range(\"B12\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A38",
+        "value": "        .Cells(1, 8) = c.Range(\"E7\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A39",
+        "value": "        .Cells(1, 9) = c.Range(\"E8\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A40",
+        "value": "        .Cells(1, 10) = c.Range(\"E9\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A41",
+        "value": "        .Cells(1, 11) = c.Range(\"E11\").Value",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A42",
+        "value": "    End With",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A43",
+        "value": "    MsgBox \"Cotización guardada en Histórico.\", vbInformation",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A44",
+        "value": "End Sub",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A46",
+        "value": "Sub Limpiar()",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A47",
+        "value": "    With Sheets(\"Cotizador\")",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A48",
+        "value": "        .Range(\"B6:B12\").ClearContents",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A49",
+        "value": "        .Range(\"B5\").Value = Date",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A50",
+        "value": "        .Range(\"B8:B11\").Value = 0",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A51",
+        "value": "        .Range(\"B11\").Value = 1",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A52",
+        "value": "    End With",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A53",
+        "value": "End Sub",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A56",
+        "value": "MACROS NUEVAS: CARGAR ARCHIVOS Y TOTALIZAR GASTOS EN DESTINO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A58",
+        "value": "Sub CargarArchivos()",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A59",
+        "value": "    Dim fd As FileDialog, ruta As String, archivo As String",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A60",
+        "value": "    Dim wbO As Workbook, wsO As Worksheet, loO As ListObject",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A61",
+        "value": "    Dim wsT As Worksheet, loT As ListObject, nueva As ListRow",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A62",
+        "value": "    Dim fila As ListRow, agente As String",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A63",
+        "value": "    Dim totalArchivos As Long, totalFilas As Long",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A65",
+        "value": "    Set fd = Application.FileDialog(msoFileDialogFolderPicker)",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A66",
+        "value": "    With fd",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A67",
+        "value": "        .Title = \"Seleccione la carpeta con los tarifarios estandarizados\"",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A68",
+        "value": "        If .Show <> -1 Then Exit Sub",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A69",
+        "value": "        ruta = .SelectedItems(1) & \"\\\"",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A70",
+        "value": "    End With",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A72",
+        "value": "    Application.ScreenUpdating = False",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A73",
+        "value": "    Application.EnableEvents = False",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A74",
+        "value": "    Set wsT = ThisWorkbook.Worksheets(\"Tarifas\")",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A75",
+        "value": "    Set loT = wsT.ListObjects(\"tblTarifas\")",
+        "type": "s",
+        "format": "General"
+      }
+    ]
+  },
+  "cells": [
+    {
+      "cell": "A1",
+      "value": "MACROS PARA BOTONES Y HISTÓRICO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A4",
+      "value": "Alt+F11 > Insertar > Módulo > pegue el código > guarde como .xlsm > clic derecho en cada forma > Asignar macro.",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A6",
+      "value": "Option Explicit",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A7",
+      "value": "Sub Cotizar()",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A8",
+      "value": "    Dim w As Worksheet",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A9",
+      "value": "    Set w = ThisWorkbook.Worksheets(\"Cotizador\")",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A10",
+      "value": "    If w.Range(\"B6\").Value = \"\" Or w.Range(\"B7\").Value = \"\" Then",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A11",
+      "value": "        MsgBox \"Seleccione Origen y Destino.\", vbExclamation: Exit Sub",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A12",
+      "value": "    End If",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A13",
+      "value": "    If WorksheetFunction.Sum(w.Range(\"B8:B10\")) = 0 Then",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A14",
+      "value": "        MsgBox \"Ingrese por lo menos un contenedor.\", vbExclamation: Exit Sub",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A15",
+      "value": "    End If",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A16",
+      "value": "    Application.CalculateFull",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A17",
+      "value": "    If w.Range(\"E9\").Value = 0 Then",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A18",
+      "value": "        MsgBox \"No hay tarifa para esta combinación de ruta/equipo.\", vbInformation",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A19",
+      "value": "    Else",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A20",
+      "value": "        MsgBox \"Cotización calculada. Mejor agente: \" & w.Range(\"E7\").Value, vbInformation",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A21",
+      "value": "    End If",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A22",
+      "value": "End Sub",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A24",
+      "value": "Sub GuardarHistorico()",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A25",
+      "value": "    Dim c As Worksheet, h As Worksheet, t As ListObject, r As ListRow",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A26",
+      "value": "    Set c = Sheets(\"Cotizador\"): Set h = Sheets(\"Historico\"): Set t = h.ListObjects(\"tblHistorico\")",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A27",
+      "value": "    Application.CalculateFull",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A28",
+      "value": "    If c.Range(\"E9\").Value <= 0 Then MsgBox \"Primero genere una cotización válida.\", vbExclamation: Exit Sub",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A29",
+      "value": "    If t.ListRows.Count = 1 And WorksheetFunction.CountA(t.ListRows(1).Range) = 0 Then Set r = t.ListRows(1) Else Set r = t.ListRows.Add",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A30",
+      "value": "    With r.Range",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A31",
+      "value": "        .Cells(1, 1) = c.Range(\"B5\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A32",
+      "value": "        .Cells(1, 2) = c.Range(\"B6\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A33",
+      "value": "        .Cells(1, 3) = c.Range(\"B7\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A34",
+      "value": "        .Cells(1, 4) = c.Range(\"B8\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A35",
+      "value": "        .Cells(1, 5) = c.Range(\"B9\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A36",
+      "value": "        .Cells(1, 6) = c.Range(\"B10\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A37",
+      "value": "        .Cells(1, 7) = c.Range(\"B12\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A38",
+      "value": "        .Cells(1, 8) = c.Range(\"E7\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A39",
+      "value": "        .Cells(1, 9) = c.Range(\"E8\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A40",
+      "value": "        .Cells(1, 10) = c.Range(\"E9\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A41",
+      "value": "        .Cells(1, 11) = c.Range(\"E11\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A42",
+      "value": "    End With",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A43",
+      "value": "    MsgBox \"Cotización guardada en Histórico.\", vbInformation",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A44",
+      "value": "End Sub",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A46",
+      "value": "Sub Limpiar()",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A47",
+      "value": "    With Sheets(\"Cotizador\")",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A48",
+      "value": "        .Range(\"B6:B12\").ClearContents",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A49",
+      "value": "        .Range(\"B5\").Value = Date",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A50",
+      "value": "        .Range(\"B8:B11\").Value = 0",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A51",
+      "value": "        .Range(\"B11\").Value = 1",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A52",
+      "value": "    End With",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A53",
+      "value": "End Sub",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A56",
+      "value": "MACROS NUEVAS: CARGAR ARCHIVOS Y TOTALIZAR GASTOS EN DESTINO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A58",
+      "value": "Sub CargarArchivos()",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A59",
+      "value": "    Dim fd As FileDialog, ruta As String, archivo As String",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A60",
+      "value": "    Dim wbO As Workbook, wsO As Worksheet, loO As ListObject",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A61",
+      "value": "    Dim wsT As Worksheet, loT As ListObject, nueva As ListRow",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A62",
+      "value": "    Dim fila As ListRow, agente As String",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A63",
+      "value": "    Dim totalArchivos As Long, totalFilas As Long",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A65",
+      "value": "    Set fd = Application.FileDialog(msoFileDialogFolderPicker)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A66",
+      "value": "    With fd",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A67",
+      "value": "        .Title = \"Seleccione la carpeta con los tarifarios estandarizados\"",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A68",
+      "value": "        If .Show <> -1 Then Exit Sub",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A69",
+      "value": "        ruta = .SelectedItems(1) & \"\\\"",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A70",
+      "value": "    End With",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A72",
+      "value": "    Application.ScreenUpdating = False",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A73",
+      "value": "    Application.EnableEvents = False",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A74",
+      "value": "    Set wsT = ThisWorkbook.Worksheets(\"Tarifas\")",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A75",
+      "value": "    Set loT = wsT.ListObjects(\"tblTarifas\")",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A76",
+      "value": "    If Not loT.DataBodyRange Is Nothing Then loT.DataBodyRange.Delete",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A78",
+      "value": "    archivo = Dir(ruta & \"*.xls*\")",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A79",
+      "value": "    Do While archivo <> \"\"",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A80",
+      "value": "        If archivo <> ThisWorkbook.Name And Left(archivo, 2) <> \"~$\" Then",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A81",
+      "value": "            Set wbO = Workbooks.Open(ruta & archivo, ReadOnly:=True)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A82",
+      "value": "            Set loO = Nothing",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A83",
+      "value": "            On Error Resume Next",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A84",
+      "value": "            Set loO = wbO.Worksheets(\"TARIFAS\").ListObjects(\"tblTarifario\")",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A85",
+      "value": "            On Error GoTo 0",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A86",
+      "value": "            If Not loO Is Nothing Then",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A87",
+      "value": "                agente = UCase(Trim(loO.ListColumns(\"Agente\").DataBodyRange.Cells(1, 1).Value))",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A88",
+      "value": "                For Each fila In loO.ListRows",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A89",
+      "value": "                    Set nueva = loT.ListRows.Add",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A90",
+      "value": "                    nueva.Range.Cells(1, 1).Value = \"IMP-\" & Format(totalFilas + 1, \"00000\")",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A91",
+      "value": "                    nueva.Range.Cells(1, 2).Value = agente",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A92",
+      "value": "                    nueva.Range.Cells(1, 4).Value = UCase(Trim(fila.Range.Cells(1, loO.ListColumns(\"POL\").Index).Value))",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A93",
+      "value": "                    nueva.Range.Cells(1, 5).Value = UCase(Trim(fila.Range.Cells(1, loO.ListColumns(\"POD\").Index).Value))",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A94",
+      "value": "                    nueva.Range.Cells(1, 6).Value = fila.Range.Cells(1, loO.ListColumns(\"VIA\").Index).Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A95",
+      "value": "                    nueva.Range.Cells(1, 7).Value = UCase(Trim(fila.Range.Cells(1, loO.ListColumns(\"NAVIERA\").Index).Value))",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A96",
+      "value": "                    nueva.Range.Cells(1, 8).Value = fila.Range.Cells(1, loO.ListColumns(\"FLETE_20ST\").Index).Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A97",
+      "value": "                    nueva.Range.Cells(1, 9).Value = fila.Range.Cells(1, loO.ListColumns(\"FLETE_40ST\").Index).Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A98",
+      "value": "                    nueva.Range.Cells(1, 10).Value = fila.Range.Cells(1, loO.ListColumns(\"FLETE_40HC\").Index).Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A99",
+      "value": "                    nueva.Range.Cells(1, 11).Value = fila.Range.Cells(1, loO.ListColumns(\"DOCUMENTACION_BL\").Index).Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A100",
+      "value": "                    nueva.Range.Cells(1, 16).Value = fila.Range.Cells(1, loO.ListColumns(\"TT\").Index).Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A101",
+      "value": "                    nueva.Range.Cells(1, 17).Value = fila.Range.Cells(1, loO.ListColumns(\"DIAS_LIBRES\").Index).Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A102",
+      "value": "                    nueva.Range.Cells(1, 18).Value = archivo",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A103",
+      "value": "                    totalFilas = totalFilas + 1",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A104",
+      "value": "                Next fila",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A105",
+      "value": "                totalArchivos = totalArchivos + 1",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A106",
+      "value": "            End If",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A107",
+      "value": "            wbO.Close False",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A108",
+      "value": "        End If",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A109",
+      "value": "        archivo = Dir",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A110",
+      "value": "    Loop",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A112",
+      "value": "    ThisWorkbook.Worksheets(\"Carga_Archivos\").Range(\"B5\").Value = ruta",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A113",
+      "value": "    ThisWorkbook.Worksheets(\"Carga_Archivos\").Range(\"F7\").Value = Now",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A114",
+      "value": "    Application.CalculateFull",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A115",
+      "value": "    Application.EnableEvents = True",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A116",
+      "value": "    Application.ScreenUpdating = True",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A117",
+      "value": "    MsgBox totalArchivos & \" archivo(s) cargados y \" & totalFilas & \" filas importadas.\", vbInformation",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A118",
+      "value": "End Sub",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A120",
+      "value": "Function GastoDestino(agente As String, destino As String, naviera As String, cantidadCont As Double, cantidadBL As Double) As Double",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A121",
+      "value": "    Dim lo As ListObject, r As ListRow, total As Double",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A122",
+      "value": "    Dim aplicaNaviera As Boolean",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A123",
+      "value": "    Set lo = ThisWorkbook.Worksheets(\"Cargos_Destino\").ListObjects(\"tblCargosDestino\")",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A124",
+      "value": "    For Each r In lo.ListRows",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A125",
+      "value": "        aplicaNaviera = (UCase(Trim(r.Range.Cells(1, 8).Value)) = \"TODAS\" Or UCase(Trim(r.Range.Cells(1, 8).Value)) = UCase(Trim(naviera)))",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A126",
+      "value": "        If UCase(Trim(r.Range.Cells(1, 1).Value)) = UCase(Trim(agente)) _",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A127",
+      "value": "        And UCase(Trim(r.Range.Cells(1, 7).Value)) = UCase(Trim(destino)) _",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A128",
+      "value": "        And UCase(Trim(r.Range.Cells(1, 9).Value)) = \"VIGENTE\" _",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A129",
+      "value": "        And aplicaNaviera Then",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A130",
+      "value": "            If UCase(Trim(r.Range.Cells(1, 5).Value)) = \"CONTENEDOR\" Then total = total + CDbl(Val(r.Range.Cells(1, 6).Value)) * cantidadCont",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A131",
+      "value": "            If UCase(Trim(r.Range.Cells(1, 5).Value)) = \"BL\" Then total = total + CDbl(Val(r.Range.Cells(1, 6).Value)) * cantidadBL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A132",
+      "value": "        End If",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A133",
+      "value": "    Next r",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A134",
+      "value": "    GastoDestino = total",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A135",
+      "value": "End Function",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A138",
+      "value": "DENTRO DE COTIZAR, REEMPLACE gastosDestino = Val(...) POR:",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A140",
+      "value": "gastosDestino = GastoDestino(wsComp.Cells(i, \"B\").Value, destino, wsComp.Cells(i, \"C\").Value, _",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A141",
+      "value": "WorksheetFunction.Sum(wsC.Range(\"B8:B10\")), wsC.Range(\"B11\").Value)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A144",
+      "value": "BLOQUE FINAL PARA LLENAR EL COMPARATIVO HORIZONTAL (B15:F31)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A146",
+      "value": "Dim cantMostrar As Long, colSalida As Long, filaComp As Long",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A148",
+      "value": "'Limpiar comparativo horizontal",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A149",
+      "value": "wsC.Range(\"B15:F31\").ClearContents",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A150",
+      "value": "wsC.Range(\"B15:F15\").Value = \"SIN OPCIÓN\"",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A152",
+      "value": "If encontrados > 5 Then cantMostrar = 5 Else cantMostrar = encontrados",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A154",
+      "value": "For i = 1 To cantMostrar",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A155",
+      "value": "    colSalida = 1 + i",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A156",
+      "value": "    filaComp = datos(10, i)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A158",
+      "value": "    wsC.Cells(15, colSalida).Value = datos(1, i)  'Agente",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A159",
+      "value": "    wsC.Cells(16, colSalida).Value = datos(2, i)  'Naviera",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A160",
+      "value": "    wsC.Cells(17, colSalida).Value = wsComp.Cells(filaComp, \"F\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A161",
+      "value": "    wsC.Cells(18, colSalida).Value = wsComp.Cells(filaComp, \"G\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A162",
+      "value": "    wsC.Cells(19, colSalida).Value = wsComp.Cells(filaComp, \"H\").Value",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A163",
+      "value": "    wsC.Cells(20, colSalida).Value = datos(4, i)  'Origen / BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A164",
+      "value": "    wsC.Cells(21, colSalida).Value = datos(5, i)  'Gastos origen",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A165",
+      "value": "    wsC.Cells(22, colSalida).Value = datos(3, i)  'Flete marítimo total",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A166",
+      "value": "    wsC.Cells(23, colSalida).Value = 0            'Recargos marítimos",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A167",
+      "value": "    wsC.Cells(24, colSalida).Value = datos(6, i)  'Gastos destino",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A168",
+      "value": "    wsC.Cells(25, colSalida).Value = datos(7, i)  'Costo total",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A170",
+      "value": "    If WorksheetFunction.Sum(wsC.Range(\"B8:B10\")) > 0 Then",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A171",
+      "value": "        wsC.Cells(26, colSalida).Value = datos(7, i) / WorksheetFunction.Sum(wsC.Range(\"B8:B10\"))",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A172",
+      "value": "    End If",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A174",
+      "value": "    wsC.Cells(27, colSalida).Value = datos(8, i)  'TT",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A175",
+      "value": "    wsC.Cells(28, colSalida).Value = datos(9, i)  'Días libres",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A176",
+      "value": "    wsC.Cells(29, colSalida).Value = \"VALIDAR\"   'Cambiar por estado real si se carga vigencia",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A177",
+      "value": "    wsC.Cells(30, colSalida).Value = \"\"          'Pendientes",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A178",
+      "value": "    wsC.Cells(31, colSalida).Value = i            'Ranking",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A179",
+      "value": "Next i",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A181",
+      "value": "wsC.Range(\"B17:F26\").NumberFormat = \"$#,##0.00\"",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A182",
+      "value": "wsC.Range(\"B31:F31\").NumberFormat = \"0\"",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A185",
+      "value": "IMPORTANTE: en la macro Cotizar, elimine el bloque que llenaba A17:J21 y pegue el bloque anterior después de ordenar datos().",
+      "type": "s",
+      "format": "General"
+    }
+  ],
+  "formulas": []
+}

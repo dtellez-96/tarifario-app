@@ -1,0 +1,378 @@
+{
+  "metadata": {
+    "name": "Carga_Archivos",
+    "state": "hidden",
+    "rows": 28,
+    "columns": 8,
+    "nonempty": 29,
+    "formula_count": 0,
+    "errors": [],
+    "merges": [
+      "A3:H3",
+      "A20:H20",
+      "B5:F5",
+      "A11:H11",
+      "A7:C9",
+      "A1:H2"
+    ],
+    "validations": [],
+    "tables": [],
+    "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+    "hidden_columns": [],
+    "hidden_rows": [],
+    "conditional_formats": [],
+    "sample": [
+      {
+        "cell": "A1",
+        "value": "CARGA DE TARIFARIOS | PROCESO SIMPLE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A3",
+        "value": "CONFIGURACIÓN DE CARGA SEMANAL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A5",
+        "value": "Carpeta de tarifarios",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B5",
+        "value": "C:\\Tarifarios_FCL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A7",
+        "value": "CARGAR / ACTUALIZAR ARCHIVOS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E7",
+        "value": "Última actualización",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F7",
+        "value": "Sin actualizar",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A11",
+        "value": "CONTROL DE ARCHIVOS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A12",
+        "value": "Agente",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B12",
+        "value": "Archivo esperado",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "C12",
+        "value": "Estado",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D12",
+        "value": "Fecha archivo",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E12",
+        "value": "Filas cargadas",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A13",
+        "value": "CONSOLCARGO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B13",
+        "value": "Tarifario.xlsx",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "C13",
+        "value": "PENDIENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A14",
+        "value": "TRANSTAINER",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B14",
+        "value": "Tarifario.xlsx",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "C14",
+        "value": "PENDIENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A15",
+        "value": "VANGUARD",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B15",
+        "value": "Tarifario.xlsx",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "C15",
+        "value": "PENDIENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A16",
+        "value": "DSV",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B16",
+        "value": "Tarifario.xlsx",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "C16",
+        "value": "PENDIENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A17",
+        "value": "AGENTE 5",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B17",
+        "value": "Tarifario.xlsx",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "C17",
+        "value": "PENDIENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A20",
+        "value": "La macro selecciona una carpeta, importa todos los archivos estandarizados y reemplaza la tabla Tarifas. Use una tabla llamada tblTarifario en cada archivo.",
+        "type": "s",
+        "format": "General"
+      }
+    ]
+  },
+  "cells": [
+    {
+      "cell": "A1",
+      "value": "CARGA DE TARIFARIOS | PROCESO SIMPLE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A3",
+      "value": "CONFIGURACIÓN DE CARGA SEMANAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A5",
+      "value": "Carpeta de tarifarios",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B5",
+      "value": "C:\\Tarifarios_FCL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A7",
+      "value": "CARGAR / ACTUALIZAR ARCHIVOS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E7",
+      "value": "Última actualización",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F7",
+      "value": "Sin actualizar",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A11",
+      "value": "CONTROL DE ARCHIVOS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A12",
+      "value": "Agente",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B12",
+      "value": "Archivo esperado",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "C12",
+      "value": "Estado",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D12",
+      "value": "Fecha archivo",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E12",
+      "value": "Filas cargadas",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A13",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B13",
+      "value": "Tarifario.xlsx",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "C13",
+      "value": "PENDIENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A14",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B14",
+      "value": "Tarifario.xlsx",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "C14",
+      "value": "PENDIENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A15",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B15",
+      "value": "Tarifario.xlsx",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "C15",
+      "value": "PENDIENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A16",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B16",
+      "value": "Tarifario.xlsx",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "C16",
+      "value": "PENDIENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A17",
+      "value": "AGENTE 5",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B17",
+      "value": "Tarifario.xlsx",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "C17",
+      "value": "PENDIENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A20",
+      "value": "La macro selecciona una carpeta, importa todos los archivos estandarizados y reemplaza la tabla Tarifas. Use una tabla llamada tblTarifario en cada archivo.",
+      "type": "s",
+      "format": "General"
+    }
+  ],
+  "formulas": []
+}

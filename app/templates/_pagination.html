@@ -1,0 +1,38 @@
+{% macro pagination_controls(pagination, endpoint, label, params={}) %}
+<nav class="table-pagination" aria-label="Paginacion de {{ label }}">
+  <div class="pagination-summary" id="results-summary">
+    {% if pagination.total %}
+    <p>Mostrando <strong>{{ pagination.first }} - {{ pagination.last }}</strong> de <strong>{{ pagination.total }}</strong> registros</p>
+    <p>Pagina {{ pagination.page }} de {{ pagination.pages }}</p>
+    {% else %}
+    <p>0 registros para mostrar</p>
+    {% endif %}
+  </div>
+  {% if pagination.pages %}
+  <div class="join" aria-label="Controles de pagina">
+    {% if pagination.has_prev %}
+    <a class="join-item btn btn-sm btn-square" href="{{ url_for(endpoint, page=pagination.prev_num, _anchor='results-table', **params) }}" rel="prev" aria-label="Pagina anterior">&lsaquo;</a>
+    {% else %}
+    <button class="join-item btn btn-sm btn-square" type="button" disabled aria-label="Pagina anterior">&lsaquo;</button>
+    {% endif %}
+    {% for number in pagination.iter_pages(left_edge=1, left_current=1, right_current=1, right_edge=1) %}
+      {% if number %}
+        {% if number == pagination.page %}
+        <span class="join-item btn btn-sm btn-primary pagination-number" aria-current="page" aria-label="Pagina {{ number }}, actual">{{ number }}</span>
+        {% else %}
+        <a class="join-item btn btn-sm pagination-number" href="{{ url_for(endpoint, page=number, _anchor='results-table', **params) }}" aria-label="Ir a pagina {{ number }}">{{ number }}</a>
+        {% endif %}
+      {% else %}
+      <span class="join-item btn btn-sm btn-ghost pagination-number" aria-hidden="true">&hellip;</span>
+      {% endif %}
+    {% endfor %}
+    <span class="join-item btn btn-sm pagination-mobile" aria-hidden="true">{{ pagination.page }} / {{ pagination.pages }}</span>
+    {% if pagination.has_next %}
+    <a class="join-item btn btn-sm btn-square" href="{{ url_for(endpoint, page=pagination.next_num, _anchor='results-table', **params) }}" rel="next" aria-label="Pagina siguiente">&rsaquo;</a>
+    {% else %}
+    <button class="join-item btn btn-sm btn-square" type="button" disabled aria-label="Pagina siguiente">&rsaquo;</button>
+    {% endif %}
+  </div>
+  {% endif %}
+</nav>
+{% endmacro %}

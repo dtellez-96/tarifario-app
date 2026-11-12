@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-2xl font-bold">No se pudo completar la operacion</h1>
+<div class="alert alert-error" role="alert">{{ message }}</div>
+<a class="btn" href="{{ url_for('web.home') }}">Volver al cotizador</a>
+{% endblock %}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es" data-theme="corporate">
+{% set endpoint = request.endpoint or '' %}
+{% set catalog_kind = (request.view_args or {}).get('kind', '') %}
+{% set section = 'catalog-' ~ catalog_kind if endpoint == 'web.catalog' else ('history' if endpoint == 'web.history' else ('imports' if endpoint == 'web.imports' else 'quotes')) %}
+{% set section_name = {'quotes': 'Cotizaciones', 'history': 'Historico', 'imports': 'Importaciones', 'catalog-rates': 'Tarifas', 'catalog-charges': 'Cargos destino', 'catalog-ports': 'Puertos'}.get(section, 'Cotizador') %}
+{% macro icon(name) -%}
+<svg class="app-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  {% if name == 'quotes' %}<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h2m4 0h.01M9 18h2m4 0h.01"/>
+  {% elif name == 'history' %}<path d="M3 11a9 9 0 1 1 2.7 7M3 4v7h7m2-4v5l3 2"/>
+  {% elif name == 'imports' %}<path d="M12 16V3m-4 4 4-4 4 4M4 15v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/>
+  {% elif name == 'rates' %}<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3m4 0h3"/>
+  {% elif name == 'charges' %}<path d="M4 7h16M4 17h16M8 3v18M16 3v18"/>
+  {% elif name == 'ports' %}<circle cx="12" cy="5" r="2"/><path d="M12 7v14M8 11h8M3 13v3a9 9 0 0 0 18 0v-3M3 13l3 3m15-3-3 3"/>
+  {% elif name == 'menu' %}<path d="M4 6h16M4 12h16M4 18h16"/>
+  {% elif name == 'close' %}<path d="m6 6 12 12M6 18 18 6"/>
+  {% elif name == 'collapse' %}<path d="m13 6-6 6 6 6m5-12-6 6 6 6"/>
+  {% else %}<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M7 6v13M12 6v13M17 6v13M7 3h10"/>
+  {% endif %}
+</svg>
+{%- endmacro %}
+{% macro nav_item(key, label, href, glyph) -%}
+<li><a href="{{ href }}" aria-label="{{ label }}" title="{{ label }}"{% if section == key %} class="menu-active" aria-current="page"{% endif %}>{{ icon(glyph) }}<span class="nav-label">{{ label }}</span></a></li>
+{%- endmacro %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ section_name }} | Cotizador FCL{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+  <script defer src="{{ url_for('static', filename='app.js') }}"></script>
+</head>
+<body class="bg-base-200">
+  <a class="skip-link btn btn-primary" href="#main-content">Saltar al contenido</a>
+  <div class="drawer lg:drawer-open app-shell">
+    <input id="navigation-drawer" type="checkbox" class="drawer-toggle" tabindex="-1" aria-hidden="true">
+    <div class="drawer-content app-workspace" id="workspace">
+      <header class="navbar app-header">
+        <button type="button" class="btn btn-ghost btn-square lg:hidden" id="open-navigation" aria-label="Abrir menu de navegacion" aria-controls="app-sidebar" aria-expanded="false">{{ icon('menu') }}</button>
+        <div class="header-location">
+          <span class="header-eyebrow">Gestion de transporte maritimo</span>
+          <div class="header-breadcrumb"><span>Workspace</span><span aria-hidden="true">/</span><strong>{{ section_name }}</strong></div>
+        </div>
+        <div class="header-actions">
+          <span class="badge badge-outline local-badge"><span class="local-dot" aria-hidden="true"></span>Entorno local</span>
+          {% if endpoint != 'web.home' %}<a class="btn btn-primary btn-sm" href="{{ url_for('web.home') }}">Nueva cotizacion</a>{% endif %}
+        </div>
+      </header>
+      <main id="main-content" class="app-main space-y-5" tabindex="-1">
+        {% for category, message in get_flashed_messages(with_categories=true) %}
+          <div role="status" class="alert {{ 'alert-success' if category == 'success' else 'alert-warning' }}">{{ message }}</div>
+        {% endfor %}
+        {% block content %}{% endblock %}
+      </main>
+      <footer class="footer app-footer">
+        <p><strong>Cotizador FCL</strong><span class="footer-separator" aria-hidden="true">/</span>Gestion de tarifas y estimaciones</p>
+        <p>Uso local &middot; Validacion comercial pendiente</p>
+      </footer>
+    </div>
+    <div class="drawer-side app-drawer">
+      <label for="navigation-drawer" aria-label="Cerrar menu" class="drawer-overlay"></label>
+      <aside id="app-sidebar" class="app-sidebar" aria-label="Panel de navegacion" tabindex="-1">
+        <div class="sidebar-brand">
+          <a href="{{ url_for('web.home') }}" class="brand-link" aria-label="Cotizador FCL" title="Cotizador FCL">
+            <span class="brand-mark">{{ icon('brand') }}</span>
+            <span class="brand-copy"><strong>Cotizador <span class="brand-accent">FCL</span></strong><small>OPERACIONES LOGISTICAS</small></span>
+          </a>
+          <button type="button" id="toggle-sidebar" class="btn btn-ghost btn-square btn-sm hidden lg:inline-flex" aria-label="Reducir barra lateral" title="Reducir barra lateral" aria-controls="app-sidebar" aria-expanded="true">{{ icon('collapse') }}</button>
+          <button type="button" id="close-navigation" class="btn btn-ghost btn-square btn-sm lg:hidden" aria-label="Cerrar menu de navegacion">{{ icon('close') }}</button>
+        </div>
+        <div class="sidebar-workspace"><span class="workspace-monogram">FCL</span><div><strong>Transporte maritimo</strong><small>Contenedores completos</small></div></div>
+        <nav aria-label="Navegacion principal" class="sidebar-navigation">
+          <ul class="menu w-full">
+            <li class="menu-title">OPERACION</li>
+            {{ nav_item('quotes', 'Cotizaciones', url_for('web.home'), 'quotes') }}
+            {{ nav_item('history', 'Historico', url_for('web.history'), 'history') }}
+            <li class="menu-title">GESTION DE DATOS</li>
+            {{ nav_item('imports', 'Importaciones', url_for('web.imports'), 'imports') }}
+            {{ nav_item('catalog-rates', 'Tarifas', url_for('web.catalog', kind='rates'), 'rates') }}
+            {{ nav_item('catalog-charges', 'Cargos destino', url_for('web.catalog', kind='charges'), 'charges') }}
+            {{ nav_item('catalog-ports', 'Puertos', url_for('web.catalog', kind='ports'), 'ports') }}
+          </ul>
+        </nav>
+        <div class="sidebar-notice"><span class="badge badge-sm">PROTOTIPO LOCAL</span><p>Sin autenticacion de usuarios.<br>Estimaciones sujetas a revision.</p></div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>

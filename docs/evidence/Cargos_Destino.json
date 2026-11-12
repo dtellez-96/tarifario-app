@@ -1,0 +1,5283 @@
+{
+  "metadata": {
+    "name": "Cargos_Destino",
+    "state": "visible",
+    "rows": 104,
+    "columns": 10,
+    "nonempty": 811,
+    "formula_count": 0,
+    "errors": [],
+    "merges": [
+      "A1:F2"
+    ],
+    "validations": [],
+    "tables": [
+      "<openpyxl.worksheet.table.Table object>\nParameters:\nid=2, name='tblCargosDestino', displayName='tblCargosDestino', comment=None, ref='A4:J104', tableType=None, headerRowCount=1, insertRow=None, insertRowShift=None, totalsRowCount=None, totalsRowShown=None, published=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowBorderDxfId=None, tableBorderDxfId=None, totalsRowBorderDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, connectionId=None, autoFilter=<openpyxl.worksheet.filters.AutoFilter object>\nParameters:\nref='A4:J104', filterColumn=[], sortState=None, sortState=None, tableColumns=[<openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=1, uniqueName=None, name='Agente', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=2, uniqueName=None, name='Pais_Hoja', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=3, uniqueName=None, name='Grupo_Naviera', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=4, uniqueName=None, name='Concepto', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=5, uniqueName=None, name='Base', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=6, uniqueName=None, name='Importe', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=7, uniqueName=None, name='Puerto_Destino', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=8, uniqueName=None, name='Naviera_Aplica', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=9, uniqueName=None, name='Estado', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=10, uniqueName=None, name='Vigencia_Hasta', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=None, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None], tableStyleInfo=<openpyxl.worksheet.table.TableStyleInfo object>\nParameters:\nname='TableStyleMedium4', showFirstColumn=False, showLastColumn=False, showRowStripes=True, showColumnStripes=False"
+    ],
+    "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+    "hidden_columns": [],
+    "hidden_rows": [],
+    "conditional_formats": [],
+    "sample": [
+      {
+        "cell": "A1",
+        "value": "CARGOS DE DESTINO DETECTADOS EN LOS TARIFARIOS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A4",
+        "value": "Agente",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B4",
+        "value": "Pais_Hoja",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "C4",
+        "value": "Grupo_Naviera",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D4",
+        "value": "Concepto",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E4",
+        "value": "Base",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F4",
+        "value": "Importe",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "G4",
+        "value": "Puerto_Destino",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "H4",
+        "value": "Naviera_Aplica",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "I4",
+        "value": "Estado",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "J4",
+        "value": "Vigencia_Hasta",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A5",
+        "value": "CONSOLCARGO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B5",
+        "value": "CARTAGENA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D5",
+        "value": "THC",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E5",
+        "value": "CONTENEDOR",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F5",
+        "value": 350,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "G5",
+        "value": "CARTAGENA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "H5",
+        "value": "TODAS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "I5",
+        "value": "VIGENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A6",
+        "value": "CONSOLCARGO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B6",
+        "value": "CARTAGENA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D6",
+        "value": "LIMPIEZA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E6",
+        "value": "BL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F6",
+        "value": 50,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "G6",
+        "value": "CARTAGENA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "H6",
+        "value": "TODAS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "I6",
+        "value": "VIGENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A7",
+        "value": "CONSOLCARGO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B7",
+        "value": "CARTAGENA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D7",
+        "value": "GATE IN X CTN",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E7",
+        "value": "CONTENEDOR",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F7",
+        "value": 50,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "G7",
+        "value": "CARTAGENA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "H7",
+        "value": "TODAS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "I7",
+        "value": "VIGENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A8",
+        "value": "CONSOLCARGO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B8",
+        "value": "COSTA RICA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D8",
+        "value": "DOCUMENTATION FEE (EXPORT/IMPORT)",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E8",
+        "value": "BL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F8",
+        "value": 70,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "G8",
+        "value": "CALDERA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "H8",
+        "value": "TODAS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "I8",
+        "value": "VIGENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A9",
+        "value": "CONSOLCARGO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B9",
+        "value": "COSTA RICA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D9",
+        "value": "CUSTOMS CLEARANCE FEE (TICA)",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E9",
+        "value": "BL",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F9",
+        "value": 50,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "G9",
+        "value": "CALDERA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "H9",
+        "value": "TODAS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "I9",
+        "value": "VIGENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A10",
+        "value": "CONSOLCARGO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B10",
+        "value": "COSTA RICA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D10",
+        "value": "TERMINAL HANDLING CHARGE DESTINATION",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E10",
+        "value": "CONTENEDOR",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F10",
+        "value": 500,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "G10",
+        "value": "CALDERA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "H10",
+        "value": "TODAS",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "I10",
+        "value": "VIGENTE",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A11",
+        "value": "CONSOLCARGO",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B11",
+        "value": "COSTA RICA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D11",
+        "value": "CONTAINER INSPECTION SURCHARGE (IMPORT ONLY)",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E11",
+        "value": "CONTENEDOR",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F11",
+        "value": 45,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "G11",
+        "value": "CALDERA",
+        "type": "s",
+        "format": "General"
+      }
+    ]
+  },
+  "cells": [
+    {
+      "cell": "A1",
+      "value": "CARGOS DE DESTINO DETECTADOS EN LOS TARIFARIOS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A4",
+      "value": "Agente",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B4",
+      "value": "Pais_Hoja",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "C4",
+      "value": "Grupo_Naviera",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D4",
+      "value": "Concepto",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E4",
+      "value": "Base",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F4",
+      "value": "Importe",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "G4",
+      "value": "Puerto_Destino",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H4",
+      "value": "Naviera_Aplica",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I4",
+      "value": "Estado",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "J4",
+      "value": "Vigencia_Hasta",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A5",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B5",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D5",
+      "value": "THC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E5",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F5",
+      "value": 350,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G5",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H5",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I5",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A6",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B6",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D6",
+      "value": "LIMPIEZA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E6",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F6",
+      "value": 50,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G6",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H6",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I6",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A7",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B7",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D7",
+      "value": "GATE IN X CTN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E7",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F7",
+      "value": 50,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G7",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H7",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I7",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A8",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B8",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D8",
+      "value": "DOCUMENTATION FEE (EXPORT/IMPORT)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E8",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F8",
+      "value": 70,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G8",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H8",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I8",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A9",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B9",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D9",
+      "value": "CUSTOMS CLEARANCE FEE (TICA)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E9",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F9",
+      "value": 50,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G9",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H9",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I9",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A10",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B10",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D10",
+      "value": "TERMINAL HANDLING CHARGE DESTINATION",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E10",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F10",
+      "value": 500,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G10",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H10",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I10",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A11",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B11",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D11",
+      "value": "CONTAINER INSPECTION SURCHARGE (IMPORT ONLY)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E11",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F11",
+      "value": 45,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G11",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H11",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I11",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A12",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B12",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D12",
+      "value": "WEIGHT CHARGE (IMPORT ONLY )",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E12",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F12",
+      "value": 5,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G12",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H12",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I12",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A13",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B13",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D13",
+      "value": "DOC FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E13",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F13",
+      "value": 45,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G13",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H13",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I13",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A14",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B14",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D14",
+      "value": "MONITOREO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E14",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F14",
+      "value": 15,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G14",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H14",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I14",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A15",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B15",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D15",
+      "value": "MANEJOS DEN DESTINO AGENT",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E15",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F15",
+      "value": 180,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G15",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H15",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I15",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A16",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B16",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D16",
+      "value": "MANEJOS DEN DESTINO AGENT",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E16",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F16",
+      "value": 200,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G16",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H16",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I16",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A17",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B17",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D17",
+      "value": "ADVANCE MANIFEST SUBMISSION FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E17",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F17",
+      "value": 80,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G17",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H17",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I17",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A18",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B18",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D18",
+      "value": "DOC FEE (DEST)",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E18",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F18",
+      "value": 75,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G18",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H18",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I18",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A19",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B19",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D19",
+      "value": "CNTR SVC CHARGE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E19",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F19",
+      "value": 70,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G19",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H19",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I19",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A20",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B20",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D20",
+      "value": "TERMINAL HANDLING CHARGE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E20",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F20",
+      "value": 700,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G20",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H20",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I20",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A21",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B21",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D21",
+      "value": "MANEJO AGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E21",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F21",
+      "value": 210,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G21",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H21",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I21",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A22",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B22",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D22",
+      "value": "THC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E22",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F22",
+      "value": 200,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G22",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H22",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I22",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A23",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B23",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D23",
+      "value": "LIMPIEZA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E23",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F23",
+      "value": 80,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G23",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H23",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I23",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A24",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B24",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D24",
+      "value": "HANDLING CHARGE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E24",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F24",
+      "value": 100,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G24",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H24",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I24",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A25",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B25",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D25",
+      "value": "TERMINAL HANDLING CHARGE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E25",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F25",
+      "value": 700,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G25",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H25",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I25",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A26",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B26",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D26",
+      "value": "THC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E26",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F26",
+      "value": 820,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G26",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H26",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I26",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A27",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B27",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D27",
+      "value": "HANDLING CHARGE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E27",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F27",
+      "value": 175,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G27",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H27",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I27",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A28",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B28",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D28",
+      "value": "DOCUMENTATION FEE AT DESTINATION",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E28",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F28",
+      "value": 50,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G28",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H28",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I28",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A29",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B29",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D29",
+      "value": "THC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E29",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F29",
+      "value": 950,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G29",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H29",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I29",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A30",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B30",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D30",
+      "value": "HANDLING CHARGE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E30",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F30",
+      "value": 185,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G30",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H30",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I30",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A31",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B31",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D31",
+      "value": "DOCUMENTATION FEE AT DESTINATION",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E31",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F31",
+      "value": 50,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G31",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H31",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I31",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A32",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B32",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D32",
+      "value": "THC DE DESTINO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E32",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F32",
+      "value": 900,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G32",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H32",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I32",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A33",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B33",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D33",
+      "value": "DOC FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E33",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F33",
+      "value": 70,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G33",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H33",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I33",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A34",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B34",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D34",
+      "value": "MANEJO AGENTE EN DESTINO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E34",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F34",
+      "value": 250,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G34",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H34",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I34",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A35",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B35",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D35",
+      "value": "THC DE DESTINO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E35",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F35",
+      "value": 912,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G35",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H35",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I35",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A36",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B36",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D36",
+      "value": "VBO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E36",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F36",
+      "value": 255,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G36",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H36",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I36",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A37",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B37",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D37",
+      "value": "RELEASE AT DEST COST IS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E37",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F37",
+      "value": 300,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G37",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H37",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I37",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A38",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B38",
+      "value": "URUGUAY",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D38",
+      "value": "DOCUMENTATION FEE AT DESTINATION",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E38",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F38",
+      "value": 280,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G38",
+      "value": "MONTEVIDEO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H38",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I38",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A39",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B39",
+      "value": "URUGUAY",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D39",
+      "value": "GASTOS DESTINO NAVIERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E39",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F39",
+      "value": 285,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G39",
+      "value": "MONTEVIDEO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H39",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I39",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A40",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B40",
+      "value": "URUGUAY",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D40",
+      "value": "TERMINAL HANDLING CHARGE (THC) AT DESTINATION",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E40",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F40",
+      "value": 750,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G40",
+      "value": "MONTEVIDEO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H40",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I40",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A41",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B41",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D41",
+      "value": "THC DE NAVIERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E41",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F41",
+      "value": 700,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G41",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H41",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I41",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A42",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B42",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D42",
+      "value": "LIMPIEZA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E42",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F42",
+      "value": 400,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G42",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H42",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I42",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A43",
+      "value": "CONSOLCARGO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B43",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D43",
+      "value": "MANEJO AGENTA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E43",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F43",
+      "value": 200,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G43",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H43",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I43",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A44",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B44",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D44",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E44",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F44",
+      "value": 340,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G44",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H44",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I44",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A45",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B45",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D45",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E45",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F45",
+      "value": 60,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G45",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H45",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I45",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A46",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B46",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D46",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E46",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F46",
+      "value": 100,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G46",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H46",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I46",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A47",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B47",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D47",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E47",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F47",
+      "value": 405,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G47",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H47",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I47",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A48",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B48",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D48",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E48",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F48",
+      "value": 35,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G48",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H48",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I48",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A49",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B49",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D49",
+      "value": "X BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E49",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F49",
+      "value": 35,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G49",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H49",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I49",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A50",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B50",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D50",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E50",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F50",
+      "value": 373,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G50",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H50",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I50",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A51",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B51",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D51",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E51",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F51",
+      "value": 380,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G51",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H51",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I51",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A52",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B52",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D52",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E52",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F52",
+      "value": 695,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G52",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H52",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I52",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A53",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B53",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D53",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E53",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F53",
+      "value": 160,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G53",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H53",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I53",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A54",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B54",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D54",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E54",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F54",
+      "value": 195,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G54",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H54",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I54",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A55",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B55",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D55",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E55",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F55",
+      "value": 350,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G55",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H55",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I55",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A56",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B56",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D56",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E56",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F56",
+      "value": 150,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G56",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H56",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I56",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A57",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B57",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D57",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E57",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F57",
+      "value": 80,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G57",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H57",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I57",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A58",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B58",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D58",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E58",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F58",
+      "value": 95,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G58",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H58",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I58",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A59",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B59",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D59",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E59",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F59",
+      "value": 100,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G59",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H59",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I59",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A60",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B60",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D60",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E60",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F60",
+      "value": 125,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G60",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H60",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I60",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A61",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B61",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D61",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E61",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F61",
+      "value": 50,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G61",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H61",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I61",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A62",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B62",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D62",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E62",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F62",
+      "value": 200,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G62",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H62",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I62",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A63",
+      "value": "TRANSTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B63",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D63",
+      "value": "X CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E63",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F63",
+      "value": 100,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G63",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H63",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I63",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A64",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B64",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D64",
+      "value": "THC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E64",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F64",
+      "value": 300,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G64",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H64",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I64",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A65",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B65",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D65",
+      "value": "HANDLING DESTINO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E65",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F65",
+      "value": 60,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G65",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H65",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I65",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A66",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B66",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D66",
+      "value": "THCD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E66",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F66",
+      "value": 100,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G66",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H66",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I66",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A67",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B67",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D67",
+      "value": "TRANSMISION MANIFIESTO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E67",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F67",
+      "value": 15,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G67",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H67",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I67",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A68",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B68",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D68",
+      "value": "EMISION DE BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E68",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F68",
+      "value": 25,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G68",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H68",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I68",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A69",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B69",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D69",
+      "value": "HANDLING",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E69",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F69",
+      "value": 75,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G69",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H69",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I69",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A70",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B70",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D70",
+      "value": "THC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E70",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F70",
+      "value": 205,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G70",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H70",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I70",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A71",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B71",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D71",
+      "value": "DELIVERY ORDEN",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E71",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F71",
+      "value": 79,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G71",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H71",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I71",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A72",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B72",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D72",
+      "value": "ADMINISTRATION FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E72",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F72",
+      "value": 101,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G72",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H72",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I72",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A73",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B73",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D73",
+      "value": "AGENCY FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E73",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F73",
+      "value": 404,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G73",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H73",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I73",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A74",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B74",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D74",
+      "value": "CONTAINER",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E74",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F74",
+      "value": 79,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G74",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H74",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I74",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A75",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B75",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D75",
+      "value": "HANDLING",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E75",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F75",
+      "value": 35,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G75",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H75",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I75",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A76",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B76",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D76",
+      "value": "DESGLOSE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E76",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F76",
+      "value": 40,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G76",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H76",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I76",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A77",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B77",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D77",
+      "value": "BL FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E77",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F77",
+      "value": 35,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G77",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H77",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I77",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A78",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B78",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D78",
+      "value": "TDI +  CONT",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E78",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F78",
+      "value": 30,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G78",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H78",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I78",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A79",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B79",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D79",
+      "value": "HANDLING FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E79",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F79",
+      "value": 75,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G79",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H79",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I79",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A80",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B80",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D80",
+      "value": "BL FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E80",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F80",
+      "value": 35,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G80",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H80",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I80",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A81",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B81",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D81",
+      "value": "BL IMO SURCHARGE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E81",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F81",
+      "value": 75,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G81",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H81",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I81",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A82",
+      "value": "VANGUARD",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B82",
+      "value": "DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D82",
+      "value": "COLLECT FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E82",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F82",
+      "value": 50,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G82",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H82",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I82",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A83",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B83",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D83",
+      "value": "INDICAR SI EL COBRO ES POR BL O POR CONT",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E83",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F83",
+      "value": 400,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G83",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H83",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I83",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A84",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B84",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D84",
+      "value": "COBRO POR BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E84",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F84",
+      "value": 100,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G84",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H84",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I84",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A85",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B85",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D85",
+      "value": "COBRO POR BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E85",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F85",
+      "value": 60,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G85",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H85",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I85",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A86",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B86",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D86",
+      "value": "POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E86",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F86",
+      "value": 500,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G86",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H86",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I86",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A87",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B87",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D87",
+      "value": "COBRO POR BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E87",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F87",
+      "value": 55,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G87",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H87",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I87",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A88",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B88",
+      "value": "COSTA RICA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D88",
+      "value": "POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E88",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F88",
+      "value": 850,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G88",
+      "value": "CALDERA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H88",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I88",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A89",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B89",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D89",
+      "value": "THC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E89",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F89",
+      "value": 120,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G89",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H89",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I89",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A90",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B90",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D90",
+      "value": "BL FEE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E90",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F90",
+      "value": 50,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G90",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H90",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I90",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A91",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B91",
+      "value": "PERU",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D91",
+      "value": "AMS, IGV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E91",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F91",
+      "value": 109,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G91",
+      "value": "CALLAO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H91",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I91",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A92",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B92",
+      "value": "REPÚBLICA DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D92",
+      "value": "POR BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E92",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F92",
+      "value": 130,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G92",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H92",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I92",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A93",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B93",
+      "value": "REPÚBLICA DOMINICANA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D93",
+      "value": "POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E93",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F93",
+      "value": 395,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G93",
+      "value": "CAUCEDO",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H93",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I93",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A94",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B94",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D94",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E94",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F94",
+      "value": 500,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G94",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H94",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I94",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A95",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B95",
+      "value": "ECUADOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D95",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E95",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F95",
+      "value": 200,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G95",
+      "value": "GUAYAQUIL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H95",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I95",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A96",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B96",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D96",
+      "value": "CARGOS LOCALES NAVIERA POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E96",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F96",
+      "value": 285,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G96",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H96",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I96",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A97",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B97",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D97",
+      "value": "CARGOS LOCALES NAVIERA POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E97",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F97",
+      "value": 170,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G97",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H97",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I97",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A98",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B98",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D98",
+      "value": "CARGOS LOCALES NAVIERA POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E98",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F98",
+      "value": 39,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G98",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H98",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I98",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A99",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B99",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D99",
+      "value": "CARGOS LOCALES NAVIERA POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E99",
+      "value": "BL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F99",
+      "value": 52,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G99",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H99",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I99",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A100",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B100",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D100",
+      "value": "CARGOS LOCALES NAVIERA POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E100",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F100",
+      "value": 52,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G100",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H100",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I100",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A101",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B101",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D101",
+      "value": "CARGOS LOCALES NAVIERA POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E101",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F101",
+      "value": 48,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G101",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H101",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I101",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A102",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B102",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D102",
+      "value": "CARGOS LOCALES NAVIERA POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E102",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F102",
+      "value": 64,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G102",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H102",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I102",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A103",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B103",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D103",
+      "value": "CARGOS LOCALES NAVIERA POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E103",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F103",
+      "value": 33,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G103",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H103",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I103",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A104",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B104",
+      "value": "GUATEMALA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D104",
+      "value": "CARGOS LOCALES NAVIERA POR CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E104",
+      "value": "CONTENEDOR",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F104",
+      "value": 69,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G104",
+      "value": "QUETZAL",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H104",
+      "value": "TODAS",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I104",
+      "value": "VIGENTE",
+      "type": "s",
+      "format": "General"
+    }
+  ],
+  "formulas": []
+}

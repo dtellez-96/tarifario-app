@@ -1,0 +1,68 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel">
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout><v:shapetype id="_x0000_t201" coordsize="21600,21600" o:spt="201"
+  path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path shadowok="f" o:extrusionok="f" strokeok="f" fillok="f" o:connecttype="rect"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+ </v:shapetype><v:shape id="_x0000_s1027" type="#_x0000_t201" style='position:absolute;
+  margin-left:621pt;margin-top:53.5pt;width:134.5pt;height:31.5pt;z-index:1;
+  mso-wrap-style:tight' o:button="t" fillcolor="buttonFace [67]" strokecolor="windowText [64]"
+  o:insetmode="auto">
+  <v:fill color2="buttonFace [67]" o:detectmouseclick="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:center'><font face="Calibri" size="220"
+   color="#000000">COTIZAR</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Button">
+   <x:Anchor>
+    6, 27, 3, 20, 7, 120, 5, 24</x:Anchor>
+   <x:PrintObject>False</x:PrintObject>
+   <x:AutoFill>False</x:AutoFill>
+   <x:FmlaMacro>[0]!COTIZAR</x:FmlaMacro>
+   <x:TextHAlign>Center</x:TextHAlign>
+   <x:TextVAlign>Center</x:TextVAlign>
+  </x:ClientData>
+ </v:shape><v:shape id="_x0000_s1029" type="#_x0000_t201" style='position:absolute;
+  margin-left:622.5pt;margin-top:93pt;width:133.5pt;height:32pt;z-index:2;
+  mso-wrap-style:tight' o:button="t" fillcolor="buttonFace [67]" strokecolor="windowText [64]"
+  o:insetmode="auto">
+  <v:fill color2="buttonFace [67]" o:detectmouseclick="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:center'><font face="Calibri" size="220"
+   color="#000000">GUARDAR HISTORICO</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Button">
+   <x:Anchor>
+    6, 30, 5, 40, 7, 121, 7, 14</x:Anchor>
+   <x:PrintObject>False</x:PrintObject>
+   <x:AutoFill>False</x:AutoFill>
+   <x:FmlaMacro>[0]!GuardarHistorico</x:FmlaMacro>
+   <x:TextHAlign>Center</x:TextHAlign>
+   <x:TextVAlign>Center</x:TextVAlign>
+  </x:ClientData>
+ </v:shape><v:shape id="_x0000_s1030" type="#_x0000_t201" style='position:absolute;
+  margin-left:622pt;margin-top:135pt;width:133.5pt;height:32pt;z-index:3;
+  mso-wrap-style:tight' o:button="t" fillcolor="buttonFace [67]" strokecolor="windowText [64]"
+  o:insetmode="auto">
+  <v:fill color2="buttonFace [67]" o:detectmouseclick="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:center'><font face="Calibri" size="220"
+   color="#000000">LIMPIAR</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Button">
+   <x:Anchor>
+    6, 29, 8, 2, 7, 120, 10, 2</x:Anchor>
+   <x:PrintObject>False</x:PrintObject>
+   <x:AutoFill>False</x:AutoFill>
+   <x:FmlaMacro>[0]!Limpiar</x:FmlaMacro>
+   <x:TextHAlign>Center</x:TextHAlign>
+   <x:TextVAlign>Center</x:TextVAlign>
+  </x:ClientData>
+ </v:shape></xml>

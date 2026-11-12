@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "_pagination.html" import pagination_controls %}
+{% block content %}
+<h1 class="text-3xl font-bold">Historico de estimaciones</h1>
+<p>Instantaneas inmutables de resultados estrictos. El historico Excel permanece en staging hasta conciliar sus columnas.</p>
+<div class="card bg-base-100">
+<div class="overflow-x-auto table-scroll" id="results-table" role="region" aria-label="Historico de estimaciones" tabindex="0"><table class="table table-zebra" aria-describedby="results-summary">
+<caption class="sr-only">Historico de estimaciones guardadas</caption>
+<thead><tr><th scope="col">ID</th><th scope="col">Fecha</th><th scope="col">Ruta</th><th scope="col">Mejor agente</th><th scope="col">Total nominal USD</th></tr></thead>
+<tbody>{% for q in quotes.items %}<tr><td><a class="link" href="{{ url_for('web.quote_detail', quote_id=q.id) }}">{{ q.id }}</a></td><td>{{ q.snapshot.input.quote_date }}</td><td>{{ q.snapshot.input.origin }} - {{ q.snapshot.input.destination }}</td><td>{{ q.snapshot.options[0].agent }}</td><td>{{ q.snapshot.options[0].total|money }}</td></tr>{% else %}<tr><td colspan="5">Sin cotizaciones guardadas.</td></tr>{% endfor %}</tbody>
+</table></div>
+{{ pagination_controls(quotes, 'web.history', 'historico') }}
+</div>
+{% endblock %}

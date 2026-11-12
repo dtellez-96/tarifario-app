@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "name": "Historico",
+    "state": "visible",
+    "rows": 7,
+    "columns": 12,
+    "nonempty": 25,
+    "formula_count": 0,
+    "errors": [],
+    "merges": [
+      "A1:K2"
+    ],
+    "validations": [],
+    "tables": [
+      "<openpyxl.worksheet.table.Table object>\nParameters:\nid=3, name='tblHistorico', displayName='tblHistorico', comment=None, ref='A4:L7', tableType=None, headerRowCount=1, insertRow=None, insertRowShift=None, totalsRowCount=None, totalsRowShown=None, published=None, headerRowDxfId=14, dataDxfId=13, totalsRowDxfId=12, headerRowBorderDxfId=None, tableBorderDxfId=None, totalsRowBorderDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, connectionId=None, autoFilter=<openpyxl.worksheet.filters.AutoFilter object>\nParameters:\nref='A4:L7', filterColumn=[], sortState=None, sortState=None, tableColumns=[<openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=1, uniqueName=None, name='Fecha Cotización', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=11, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=2, uniqueName=None, name='Origen', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=10, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=3, uniqueName=None, name='Destino', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=9, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=4, uniqueName=None, name='20ST', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=8, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=5, uniqueName=None, name='40ST', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=7, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=6, uniqueName=None, name='40HC', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=6, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=7, uniqueName=None, name='FOB', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=5, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=8, uniqueName=None, name='Agente', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=4, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=9, uniqueName=None, name='Naviera', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=3, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=10, uniqueName=None, name='Costo_Total', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=2, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=11, uniqueName=None, name='Impacto_FOB', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=1, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None, <openpyxl.worksheet.table.TableColumn object>\nParameters:\nid=12, uniqueName=None, name='Columna1', totalsRowFunction=None, totalsRowLabel=None, queryTableFieldId=None, headerRowDxfId=None, dataDxfId=0, totalsRowDxfId=None, headerRowCellStyle=None, dataCellStyle=None, totalsRowCellStyle=None, calculatedColumnFormula=None, totalsRowFormula=None, xmlColumnPr=None, extLst=None], tableStyleInfo=<openpyxl.worksheet.table.TableStyleInfo object>\nParameters:\nname='TableStyleMedium2', showFirstColumn=False, showLastColumn=False, showRowStripes=True, showColumnStripes=False"
+    ],
+    "protection": "<openpyxl.worksheet.protection.SheetProtection object>\nParameters:\nselectLockedCells=False, selectUnlockedCells=False, algorithmName=None, sheet=False, objects=False, insertRows=True, insertHyperlinks=True, autoFilter=True, scenarios=False, formatColumns=True, deleteColumns=True, insertColumns=True, pivotTables=True, deleteRows=True, formatCells=True, saltValue=None, formatRows=True, sort=True, spinCount=None, password=None, hashValue=None",
+    "hidden_columns": [],
+    "hidden_rows": [],
+    "conditional_formats": [],
+    "sample": [
+      {
+        "cell": "A1",
+        "value": "HISTÓRICO DE COTIZACIONES",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A4",
+        "value": "Fecha Cotización",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "B4",
+        "value": "Origen",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "C4",
+        "value": "Destino",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D4",
+        "value": "20ST",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E4",
+        "value": "40ST",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "F4",
+        "value": "40HC",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "G4",
+        "value": "FOB",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "H4",
+        "value": "Agente",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "I4",
+        "value": "Naviera",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "J4",
+        "value": "Costo_Total",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "K4",
+        "value": "Impacto_FOB",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "L4",
+        "value": "Columna1",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "A7",
+        "value": "COT-20261108-003",
+        "type": "s",
+        "format": "dd\\-mmm\\-yyyy"
+      },
+      {
+        "cell": "B7",
+        "value": "2026-11-08 00:00:00",
+        "type": "d",
+        "format": "dd\\-mmm\\-yyyy"
+      },
+      {
+        "cell": "C7",
+        "value": "SHANGHAI",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "D7",
+        "value": "CARTAGENA",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "E7",
+        "value": 0,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "F7",
+        "value": 0,
+        "type": "n",
+        "format": "General"
+      },
+      {
+        "cell": "G7",
+        "value": 2,
+        "type": "n",
+        "format": "\"$\"#,##0.00"
+      },
+      {
+        "cell": "H7",
+        "value": 100000,
+        "type": "n",
+        "format": "\"$\"#,##0.00"
+      },
+      {
+        "cell": "I7",
+        "value": "DSV",
+        "type": "s",
+        "format": "General"
+      },
+      {
+        "cell": "J7",
+        "value": "COSCO",
+        "type": "s",
+        "format": "\"$\"#,##0.00"
+      },
+      {
+        "cell": "K7",
+        "value": 1300,
+        "type": "n",
+        "format": "\"$\"#,##0.00"
+      },
+      {
+        "cell": "L7",
+        "value": 0.013,
+        "type": "n",
+        "format": "0.00%"
+      }
+    ]
+  },
+  "cells": [
+    {
+      "cell": "A1",
+      "value": "HISTÓRICO DE COTIZACIONES",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A4",
+      "value": "Fecha Cotización",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "B4",
+      "value": "Origen",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "C4",
+      "value": "Destino",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D4",
+      "value": "20ST",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E4",
+      "value": "40ST",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "F4",
+      "value": "40HC",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "G4",
+      "value": "FOB",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "H4",
+      "value": "Agente",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "I4",
+      "value": "Naviera",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "J4",
+      "value": "Costo_Total",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "K4",
+      "value": "Impacto_FOB",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "L4",
+      "value": "Columna1",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "A7",
+      "value": "COT-20261108-003",
+      "type": "s",
+      "format": "dd\\-mmm\\-yyyy"
+    },
+    {
+      "cell": "B7",
+      "value": "2026-11-08 00:00:00",
+      "type": "d",
+      "format": "dd\\-mmm\\-yyyy"
+    },
+    {
+      "cell": "C7",
+      "value": "SHANGHAI",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "D7",
+      "value": "CARTAGENA",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "E7",
+      "value": 0,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "F7",
+      "value": 0,
+      "type": "n",
+      "format": "General"
+    },
+    {
+      "cell": "G7",
+      "value": 2,
+      "type": "n",
+      "format": "\"$\"#,##0.00"
+    },
+    {
+      "cell": "H7",
+      "value": 100000,
+      "type": "n",
+      "format": "\"$\"#,##0.00"
+    },
+    {
+      "cell": "I7",
+      "value": "DSV",
+      "type": "s",
+      "format": "General"
+    },
+    {
+      "cell": "J7",
+      "value": "COSCO",
+      "type": "s",
+      "format": "\"$\"#,##0.00"
+    },
+    {
+      "cell": "K7",
+      "value": 1300,
+      "type": "n",
+      "format": "\"$\"#,##0.00"
+    },
+    {
+      "cell": "L7",
+      "value": 0.013,
+      "type": "n",
+      "format": "0.00%"
+    }
+  ],
+  "formulas": []
+}
